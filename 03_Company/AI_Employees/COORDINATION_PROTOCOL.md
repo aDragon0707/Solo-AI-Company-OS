@@ -10,11 +10,13 @@
 |---|---|
 | Founder decisions | `01_Founder/FOUNDER_Decision_Log.md` |
 | Verified project truth | project-specific truth source |
-| Company state | `02_Dashboards/DASHBOARD_Company_State.md` |
+| Company state summary | `02_Dashboards/DASHBOARD_Company_State.md` |
 | Work history | `03_Company/AI_Worklogs/WORKLOG_INDEX.md` |
 | Role scope | `03_Company/AI_Employees/*/ROLE.md` |
 
 If sources conflict, the founder decision log wins.
+
+The company state dashboard is an orientation layer. It must be updated when worklogs or founder decisions change, but it does not override either one.
 
 ---
 

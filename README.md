@@ -45,6 +45,20 @@ Do not use this if you want an auto-running agent platform, a task app clone, or
 
 Do not overthink the architecture. Start with one AI employee and one worklog.
 
+Optional self-serve setup:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\init-vault.ps1 `
+  -OutputPath 'F:\Your-New-Vault' `
+  -CompanyName 'Your Company' `
+  -FounderName 'Your Name' `
+  -ProjectName 'Your Project' `
+  -ProductName 'Your Product' `
+  -CreateDay1Worklog
+```
+
+Or set it up manually:
+
 1. **Open the vault**
    Open this folder in Obsidian, VS Code, Cursor, or any Markdown editor.
 
@@ -215,6 +229,8 @@ Once the quickstart is working:
 - `EXAMPLE_DAY_1.md` shows a fully fake first day inside the system.
 - `CONTRIBUTING.md` defines what kinds of open-source contributions fit this project.
 - `LAUNCH_PLAYBOOK.md` captures the recommended public launch and monetization path.
+- `PRODUCT_BOUNDARY.md` defines the free Core and future Pro Pack boundary.
+- `scripts/init-vault.ps1` generates a customized vault without paid tools or network calls.
 - `LICENSE` makes the core template usable, forkable, and remixable.
 
 ---

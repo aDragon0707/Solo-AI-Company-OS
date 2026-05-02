@@ -19,6 +19,7 @@ Start here instead of wandering through the folder tree.
 
 ## 2. Company Operating Maps
 
+- Company state dashboard: `02_Dashboards/DASHBOARD_Company_State.md`
 - Company map: `03_Company/MOC_Company.md`
 - AI employee map: `03_Company/MOC_AI_Employees.md`
 - Demo package map: `03_Company/MOC_Demo_Package.md`
@@ -67,6 +68,8 @@ Default roles:
 
 - Contribution rules: `CONTRIBUTING.md`
 - Launch playbook: `LAUNCH_PLAYBOOK.md`
+- Product boundary: `PRODUCT_BOUNDARY.md`
+- Self-serve setup scripts: `scripts/README.md`
 - License: `LICENSE`
 
 ---

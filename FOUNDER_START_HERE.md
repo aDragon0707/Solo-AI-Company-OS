@@ -17,6 +17,7 @@ Solo-AI-Company-OS helps a solo founder operate a company with AI employees whil
 | Question | File |
 |---|---|
 | What have I formally decided? | `01_Founder/FOUNDER_Decision_Log.md` |
+| What is the current operating state? | `02_Dashboards/DASHBOARD_Company_State.md` |
 | What should I open next? | `OBSIDIAN_HOME.md` |
 
 If you are tired, busy, or context-switching, start with those two.
@@ -66,10 +67,11 @@ AI must not:
 
 1. Rename placeholders: `[Company Name]`, `[Project Name]`, `[Product Name]`.
 2. Fill in your first founder decisions.
-3. Customize AI employee role prompts.
-4. Create the first worklog entry.
-5. Build one account workspace from `03_Company/Accounts/MOC_Account_TEMPLATE.md`.
-6. Use AI-05 to map your project before asking for code-level explanations.
+3. Update `02_Dashboards/DASHBOARD_Company_State.md` with the current project state.
+4. Customize AI employee role prompts.
+5. Create the first worklog entry.
+6. Build one account workspace from `03_Company/Accounts/MOC_Account_TEMPLATE.md`.
+7. Use AI-05 to map your project before asking for code-level explanations.
 
 ---
 

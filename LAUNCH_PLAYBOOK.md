@@ -98,37 +98,39 @@ Product Hunt is better after you have visuals, a crisp tagline, and a clear make
 
 Keep the core repo free and open-source.
 
-Charge for help around the repo, not for the base template.
+The paid path should be self-serve, not founder-dependent consulting.
 
 Recommended model:
 
 | Layer | Price Strategy | Reason |
 |---|---|---|
-| Core template | free | earns trust and adoption |
-| Setup guide or video course | paid | saves users time |
-| Founder setup session | paid | high-touch support for serious users |
-| Advanced packs | paid | useful once V1 has real users |
-| Sponsored development | optional | supports maintenance without blocking access |
+| Free Core | free | builds trust, adoption, and public proof |
+| Pro Template Pack | paid | gives buyers a more complete ready-to-use package |
+| Automated setup tools | paid or bundled with Pro | saves setup time without requiring live help |
+| Role packs | paid | serves specific founder types without custom work |
+| Pack updates | paid upgrade or included updates | keeps the product improving over time |
+| GitHub Sponsors | optional later | supports maintenance after users already value the repo |
 
-Do not start by selling a complex platform. First prove that the simple Markdown version creates real value.
+The free repo should remain complete enough to use. The Pro Pack should save time and add depth, not unlock the basic system.
 
-Good paid offers later:
+Good paid assets later:
 
-- "Set up your AI company OS in one afternoon"
-- "AI employee role pack for consultants"
-- "Founder decision system workshop"
-- "Private vault review and cleanup"
+- one-click vault generator
+- richer AI employee role packs
+- founder, consultant, creator, and agency variants
+- Day 1, Day 7, and Day 30 operating flows
+- larger fictional example vaults
+- packaged release ZIP files
+- short setup videos or written setup guides
 
-Avoid charging for:
+Avoid making the business depend on:
 
-- the README
-- the base folder structure
-- the core decision log
-- the worklog template
+- manual setup calls
+- custom vault cleanup
+- ongoing private support
+- promises to fix each user's workflow by hand
 
-The open-source version should remain complete enough to be useful.
-
-GitHub Sponsors can come later, after people already see the project as useful.
+If private help is offered at all, it should be rare, expensive, and clearly outside the normal product. The default buyer experience should be self-serve.
 
 ---
 
