@@ -34,6 +34,7 @@ The free repo should keep:
 - at least one fictional first-day example
 - license and contribution rules
 - a basic self-serve initialization path
+- basic release validation and packaging scripts
 
 The Core must remain usable without payment, a server, a database, or a paid tool.
 

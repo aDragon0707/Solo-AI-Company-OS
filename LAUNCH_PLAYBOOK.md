@@ -45,6 +45,8 @@ Before a loud launch, prepare:
 - `EXAMPLE_DAY_1.md`
 - license
 - contribution rules
+- release checklist
+- validation and packaging scripts
 - one short launch post
 - three screenshots or image previews
 
@@ -91,6 +93,13 @@ Start with quieter channels first. Use the first reactions to fix confusing word
 Show HN is a fit only after the public repo is easy to try. Do not submit a pure landing page or fundraiser.
 
 Product Hunt is better after you have visuals, a crisp tagline, and a clear maker story.
+
+Before posting widely, run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\validate-release.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\package-release.ps1 -Version '0.1.0'
+```
 
 ---
 

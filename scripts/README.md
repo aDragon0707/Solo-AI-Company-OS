@@ -50,3 +50,48 @@ The script:
 - refuses to overwrite an existing output folder unless `-Force` is used
 
 The generated Day 1 worklog records setup only. It does not claim that AI completed business, customer, research, or implementation work.
+
+---
+
+## Validate A Release
+
+Use `validate-release.ps1` before publishing or packaging.
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\validate-release.ps1
+```
+
+The validation script checks:
+
+- required public files exist
+- forbidden terms are absent
+- PowerShell scripts parse
+- the system map SVG parses as XML
+- the vault initialization flow works
+- generated Markdown has no core placeholders left
+
+Use `-SkipInitTest` only when you need a faster documentation-only check.
+
+---
+
+## Package A Release ZIP
+
+Use `package-release.ps1` to build a self-serve ZIP under `dist/`.
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\package-release.ps1 -Version '0.1.0'
+```
+
+The package script runs validation first, then creates:
+
+```text
+dist/Solo-AI-Company-OS-v0.1.0.zip
+```
+
+The ZIP excludes:
+
+- `.git/`
+- `.obsidian/`
+- `dist/`
+
+Use `-Force` to replace an existing ZIP.

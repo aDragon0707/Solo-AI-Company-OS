@@ -230,7 +230,9 @@ Once the quickstart is working:
 - `CONTRIBUTING.md` defines what kinds of open-source contributions fit this project.
 - `LAUNCH_PLAYBOOK.md` captures the recommended public launch and monetization path.
 - `PRODUCT_BOUNDARY.md` defines the free Core and future Pro Pack boundary.
+- `RELEASE_CHECKLIST.md` defines the validation and packaging flow before public release.
 - `scripts/init-vault.ps1` generates a customized vault without paid tools or network calls.
+- `scripts/validate-release.ps1` and `scripts/package-release.ps1` support self-serve release checks and ZIP packaging.
 - `LICENSE` makes the core template usable, forkable, and remixable.
 
 ---
