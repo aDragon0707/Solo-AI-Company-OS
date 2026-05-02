@@ -8,6 +8,22 @@ Solo-AI-Company-OS helps you turn scattered AI chats into founder decisions, rol
 
 This is not a prompt dump. It is an operating system for memory, delegation, review, and founder judgment.
 
+![Solo-AI-Company-OS map](assets/solo-ai-company-os-map.svg)
+
+---
+
+## At A Glance
+
+| If your AI work feels like... | This gives you... |
+|---|---|
+| decisions buried in old chats | a formal founder decision log |
+| every AI chat starting cold | stable role prompts and read-before-work files |
+| progress reports that vanish | handoff-capable worklogs |
+| strategy mixed with messy thinking | separate inbox, decision, and retrospective ledgers |
+| the founder losing technical confidence | a learning lab with AI-05 as tutor |
+
+The system is intentionally boring in the best way: plain files, explicit rules, durable handoff, and no hidden platform dependency.
+
 ---
 
 ## Who Is This For?
@@ -18,6 +34,10 @@ This is not a prompt dump. It is an operating system for memory, delegation, rev
 - **Operators** who need AI work to leave a durable trail instead of disappearing into chat history.
 
 Optimized for Obsidian MOC navigation, but fundamentally just Markdown. You can use it in Obsidian, VS Code, Cursor, or any editor.
+
+Use this if you want a lightweight company memory system before you build heavier tooling.
+
+Do not use this if you want an auto-running agent platform, a task app clone, or a set of one-off prompts.
 
 ---
 
@@ -45,6 +65,8 @@ Do not overthink the architecture. Start with one AI employee and one worklog.
    `03_Company/AI_Worklogs/WORKLOG_TEMPLATE.md`.
 
 You now have durable company memory. Welcome to Day 1.
+
+Want to see the shape before filling your own vault? Open `EXAMPLE_DAY_1.md`.
 
 ---
 
@@ -185,6 +207,15 @@ Once the quickstart is working:
 3. Use `03_Company/AI_Worklogs/WORKLOG_INDEX.md` to track durable work history.
 4. Use `04_Learning/` when the founder needs to understand architecture or code.
 5. Review `00_System_Brain/V2_Cognitive_OS_Roadmap.md` only after v1 is already useful.
+
+---
+
+## Example And Launch Files
+
+- `EXAMPLE_DAY_1.md` shows a fully fake first day inside the system.
+- `CONTRIBUTING.md` defines what kinds of open-source contributions fit this project.
+- `LAUNCH_PLAYBOOK.md` captures the recommended public launch and monetization path.
+- `LICENSE` makes the core template usable, forkable, and remixable.
 
 ---
 

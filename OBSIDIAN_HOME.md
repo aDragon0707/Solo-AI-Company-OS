@@ -9,6 +9,7 @@ Start here instead of wandering through the folder tree.
 ## 1. Daily Founder Entry
 
 - Founder quick start: `FOUNDER_START_HERE.md`
+- Filled first-day example: `EXAMPLE_DAY_1.md`
 - Founder home: `01_Founder/FOUNDER_HOME.md`
 - Raw thinking inbox: `01_Founder/FOUNDER_Thinking_Inbox.md`
 - Formal decision log: `01_Founder/FOUNDER_Decision_Log.md`
@@ -58,10 +59,19 @@ Default roles:
 - AI operating model: `00_System_Brain/AI_Employees_Operating_Model.md`
 - Claim boundary principles: `00_System_Brain/Claim_Boundary_Principles.md`
 - Minimal handoff prompt: `00_System_Brain/Handoff_Minimal_Prompt.md`
+- Future roadmap: `00_System_Brain/V2_Cognitive_OS_Roadmap.md`
 
 ---
 
-## 6. Daily Rule
+## 6. Open-Source Project Files
+
+- Contribution rules: `CONTRIBUTING.md`
+- Launch playbook: `LAUNCH_PLAYBOOK.md`
+- License: `LICENSE`
+
+---
+
+## 7. Daily Rule
 
 Every important work session starts with:
 

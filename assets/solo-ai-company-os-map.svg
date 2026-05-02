@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Solo-AI-Company-OS system map</title>
+  <desc id="desc">A visual map showing the founder decision log at the center, with AI roles, worklogs, learning, and public story arranged around it.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#121826"/>
+      <stop offset="52%" stop-color="#17313b"/>
+      <stop offset="100%" stop-color="#203227"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f4c95d"/>
+    </marker>
+    <style>
+      .small { font: 500 18px Inter, Segoe UI, Arial, sans-serif; fill: #dce7e5; }
+      .tiny { font: 500 15px Inter, Segoe UI, Arial, sans-serif; fill: #aebfc0; }
+      .label { font: 700 24px Inter, Segoe UI, Arial, sans-serif; fill: #ffffff; }
+      .title { font: 800 42px Inter, Segoe UI, Arial, sans-serif; fill: #ffffff; }
+      .rule { font: 650 20px Inter, Segoe UI, Arial, sans-serif; fill: #f4c95d; }
+      .box { fill: rgba(255,255,255,0.08); stroke: rgba(255,255,255,0.24); stroke-width: 2; rx: 18; }
+      .core { fill: rgba(244,201,93,0.18); stroke: #f4c95d; stroke-width: 3; rx: 24; }
+      .line { stroke: #f4c95d; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="680" fill="url(#bg)"/>
+  <circle cx="1040" cy="120" r="150" fill="#f4c95d" opacity="0.08"/>
+  <circle cx="170" cy="600" r="170" fill="#65d1c6" opacity="0.08"/>
+
+  <text x="70" y="80" class="title">Solo-AI-Company-OS</text>
+  <text x="72" y="118" class="small">Stop losing your AI company inside chat history.</text>
+
+  <rect x="400" y="230" width="400" height="180" class="core"/>
+  <text x="600" y="285" text-anchor="middle" class="label">Founder Decision Log</text>
+  <text x="600" y="322" text-anchor="middle" class="small">single source of truth</text>
+  <text x="600" y="358" text-anchor="middle" class="tiny">AI work obeys founder decisions</text>
+
+  <rect x="80" y="205" width="260" height="125" class="box"/>
+  <text x="210" y="252" text-anchor="middle" class="label">Thinking Inbox</text>
+  <text x="210" y="286" text-anchor="middle" class="tiny">messy ideas stay safe</text>
+
+  <rect x="80" y="380" width="260" height="125" class="box"/>
+  <text x="210" y="427" text-anchor="middle" class="label">Retrospective</text>
+  <text x="210" y="461" text-anchor="middle" class="tiny">judgment improves over time</text>
+
+  <rect x="860" y="145" width="270" height="125" class="box"/>
+  <text x="995" y="192" text-anchor="middle" class="label">AI Employees</text>
+  <text x="995" y="226" text-anchor="middle" class="tiny">roles, prompts, boundaries</text>
+
+  <rect x="860" y="325" width="270" height="125" class="box"/>
+  <text x="995" y="372" text-anchor="middle" class="label">Worklogs</text>
+  <text x="995" y="406" text-anchor="middle" class="tiny">handoff-ready state slices</text>
+
+  <rect x="860" y="505" width="270" height="125" class="box"/>
+  <text x="995" y="552" text-anchor="middle" class="label">Learning Lab</text>
+  <text x="995" y="586" text-anchor="middle" class="tiny">intent first, code second</text>
+
+  <rect x="390" y="500" width="420" height="90" class="box"/>
+  <text x="600" y="538" text-anchor="middle" class="rule">Plain Markdown, durable handoff, no hidden state</text>
+  <text x="600" y="568" text-anchor="middle" class="tiny">Use it in Obsidian, VS Code, Cursor, or any editor.</text>
+
+  <path d="M340 270 C365 285 380 300 400 315" class="line"/>
+  <path d="M340 440 C370 415 380 390 400 360" class="line"/>
+  <path d="M800 300 C820 265 835 230 860 210" class="line"/>
+  <path d="M800 345 C820 355 835 370 860 388" class="line"/>
+  <path d="M800 392 C835 445 850 500 860 565" class="line"/>
+  <path d="M600 410 L600 500" class="line"/>
+</svg>
