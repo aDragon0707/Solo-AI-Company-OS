@@ -12,15 +12,17 @@ Solo-AI-Company-OS helps a solo founder operate a company with AI employees whil
 
 ---
 
-## 2. The Two Files To Read First
+## 2. The First Files To Read
 
 | Question | File |
 |---|---|
 | What have I formally decided? | `01_Founder/FOUNDER_Decision_Log.md` |
 | What is the current operating state? | `02_Dashboards/DASHBOARD_Company_State.md` |
+| How is the vault linked in Obsidian? | `02_Dashboards/DASHBOARD_Link_Map.md` |
+| How may AI maintain the text system? | `00_System_Brain/AI_Text_Maintenance_Protocol.md` |
 | What should I open next? | `OBSIDIAN_HOME.md` |
 
-If you are tired, busy, or context-switching, start with those two.
+If you are tired, busy, or context-switching, start with these files.
 
 ---
 
@@ -68,10 +70,12 @@ AI must not:
 1. Rename placeholders: `[Company Name]`, `[Project Name]`, `[Product Name]`.
 2. Fill in your first founder decisions.
 3. Update `02_Dashboards/DASHBOARD_Company_State.md` with the current project state.
-4. Customize AI employee role prompts.
-5. Create the first worklog entry.
-6. Build one account workspace from `03_Company/Accounts/MOC_Account_TEMPLATE.md`.
-7. Use AI-05 to map your project before asking for code-level explanations.
+4. Open `02_Dashboards/DASHBOARD_Link_Map.md` in Obsidian and confirm the graph has a usable starting shape.
+5. Customize AI employee role prompts.
+6. Create the first worklog entry.
+7. Build one account workspace from `03_Company/Accounts/MOC_Account_TEMPLATE.md`.
+8. Use AI-05 to map your project before asking for code-level explanations.
+9. If your vault grows, ask an AI assistant to follow `00_System_Brain/AI_Text_Maintenance_Protocol.md`.
 
 ---
 
@@ -81,4 +85,16 @@ Copy this:
 
 ```text
 AI-01, read the founder decision log, Obsidian home, company maps, and worklog index. Tell me the top 3 priorities, current blockers, required founder decisions, and which AI owns the next step.
+```
+
+For Obsidian link cleanup, copy the prompt in:
+
+```text
+00_System_Brain/AI_Obsidian_Link_Maintenance_Prompt.md
+```
+
+For broader dashboard, MOC, worklog-index, and handoff cleanup, use:
+
+```text
+00_System_Brain/AI_Text_Maintenance_Protocol.md
 ```

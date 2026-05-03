@@ -27,6 +27,7 @@ The free repo should keep:
 - company state dashboard
 - AI-01 to AI-05 base roles and start prompts
 - coordination protocol
+- AI text maintenance protocol
 - worklog index and worklog template
 - learning lab
 - claim boundary principles

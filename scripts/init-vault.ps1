@@ -163,6 +163,8 @@ if ($CreateDay1Worklog) {
 - Review FOUNDER_START_HERE.md.
 - Fill 01_Founder/FOUNDER_Decision_Log.md.
 - Update 02_Dashboards/DASHBOARD_Company_State.md.
+- Open 02_Dashboards/DASHBOARD_Link_Map.md in Obsidian and confirm the starting graph.
+- Read 00_System_Brain/AI_Text_Maintenance_Protocol.md before asking AI to maintain dashboards, maps, worklog indexes, handoffs, or links.
 
 ## Needs Another AI
 - AI-01 should perform the first coordination review after the founder fills initial decisions.
@@ -171,11 +173,11 @@ if ($CreateDay1Worklog) {
 Handoff To: AI-01 Founder Office / PMO
 Reason For Handoff: First coordination pass after template initialization.
 Current State: Vault initialized only.
-Files Read: Template files copied by script.
+Files Read: Template files copied by script, including AI text maintenance protocol, Obsidian link map, and AI link maintenance prompt.
 Files Changed: Generated vault files.
 Verification Status: Setup script completed.
 Known Gaps: No founder-approved operating decisions yet.
-Next AI Needs: Read founder decision log, dashboard, coordination protocol, and worklog index.
+Next AI Needs: Read founder decision log, company state dashboard, AI text maintenance protocol, link map, coordination protocol, and worklog index.
 Do Not Assume: Do not treat setup as evidence of business progress.
 Founder Decision Needed: Initial operating boundaries and first project priority.
 

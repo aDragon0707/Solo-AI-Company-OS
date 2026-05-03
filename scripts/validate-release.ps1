@@ -83,6 +83,8 @@ if ([string]::IsNullOrWhiteSpace($TestOutputPath)) {
 
 $requiredPaths = @(
     'README.md',
+    'INSTALL.ps1',
+    'INSTALL_WINDOWS.bat',
     'LICENSE',
     'CONTRIBUTING.md',
     'PRODUCT_BOUNDARY.md',
@@ -90,6 +92,9 @@ $requiredPaths = @(
     'EXAMPLE_DAY_1.md',
     'OBSIDIAN_HOME.md',
     '02_Dashboards\DASHBOARD_Company_State.md',
+    '02_Dashboards\DASHBOARD_Link_Map.md',
+    '00_System_Brain\AI_Text_Maintenance_Protocol.md',
+    '00_System_Brain\AI_Obsidian_Link_Maintenance_Prompt.md',
     '03_Company\AI_Worklogs\WORKLOG_TEMPLATE.md',
     'scripts\init-vault.ps1',
     'scripts\README.md',
@@ -127,6 +132,8 @@ Get-ChildItem -LiteralPath (Join-Path -Path $repoRoot -ChildPath 'scripts') -Fil
     Test-PowerShellFile -Path $_.FullName
 }
 
+Test-PowerShellFile -Path (Join-Path -Path $repoRoot -ChildPath 'INSTALL.ps1')
+
 [xml](Get-Content -LiteralPath (Join-Path -Path $repoRoot -ChildPath 'assets\solo-ai-company-os-map.svg') -Raw) | Out-Null
 
 if (-not $SkipInitTest) {
@@ -145,6 +152,9 @@ if (-not $SkipInitTest) {
         'OBSIDIAN_HOME.md',
         '01_Founder',
         '02_Dashboards\DASHBOARD_Company_State.md',
+        '02_Dashboards\DASHBOARD_Link_Map.md',
+        '00_System_Brain\AI_Text_Maintenance_Protocol.md',
+        '00_System_Brain\AI_Obsidian_Link_Maintenance_Prompt.md',
         '03_Company',
         '04_Learning'
     )

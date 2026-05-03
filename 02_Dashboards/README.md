@@ -9,6 +9,7 @@ Dashboards are summaries. They help the founder and AI employees orient quickly,
 ## Dashboard Files
 
 - `DASHBOARD_Company_State.md` - current priorities, blockers, decisions needed, and next owners
+- `DASHBOARD_Link_Map.md` - Obsidian wiki-link map for navigation, graph view, and AI link maintenance
 
 ---
 
@@ -33,3 +34,10 @@ Update the company state dashboard when:
 - a founder decision is needed
 - an AI employee completes meaningful work
 - ownership of the next step changes
+
+Update the link map when:
+
+- a new major map or dashboard appears
+- a new project, account, learning thread, or operating area becomes important
+- an AI assistant adds wiki links across the vault
+- Obsidian graph navigation starts to feel confusing

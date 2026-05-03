@@ -2,11 +2,15 @@
 
 **Stop losing your AI company inside chat history.**
 
-A disciplined Markdown operating system for solo founders managing AI employees.
+A Markdown operating system for humans coordinating AI workers with durable memory, clear decisions, worklogs, and handoffs.
 
 Solo-AI-Company-OS helps you turn scattered AI chats into founder decisions, role-based AI operators, durable worklogs, handoffs, and a learning loop you can actually trust.
 
 This is not a prompt dump. It is an operating system for memory, delegation, review, and founder judgment.
+
+```text
+Human decides. AI executes. Markdown remembers. Worklogs hand off.
+```
 
 ![Solo-AI-Company-OS map](assets/solo-ai-company-os-map.svg)
 
@@ -21,6 +25,7 @@ This is not a prompt dump. It is an operating system for memory, delegation, rev
 | progress reports that vanish | handoff-capable worklogs |
 | strategy mixed with messy thinking | separate inbox, decision, and retrospective ledgers |
 | the founder losing technical confidence | a learning lab with AI-05 as tutor |
+| Obsidian becoming another folder maze | a link map and AI text maintenance protocol |
 
 The system is intentionally boring in the best way: plain files, explicit rules, durable handoff, and no hidden platform dependency.
 
@@ -37,7 +42,7 @@ Optimized for Obsidian MOC navigation, but fundamentally just Markdown. You can 
 
 Use this if you want a lightweight company memory system before you build heavier tooling.
 
-Do not use this if you want an auto-running agent platform, a task app clone, or a set of one-off prompts.
+Do not use this if you want an auto-running agent platform, a task app clone, a personal knowledge management theme, or a set of one-off prompts.
 
 ---
 
@@ -45,7 +50,22 @@ Do not use this if you want an auto-running agent platform, a task app clone, or
 
 Do not overthink the architecture. Start with one AI employee and one worklog.
 
-Optional self-serve setup:
+Easiest Windows setup:
+
+1. Download the release ZIP.
+2. Unzip it.
+3. Double-click `INSTALL_WINDOWS.bat`.
+4. Open the generated folder in Obsidian.
+
+One-command setup:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\INSTALL.ps1
+```
+
+The installer asks a few questions, creates your vault, and opens the generated folder.
+
+Advanced self-serve setup:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\init-vault.ps1 `
@@ -81,6 +101,8 @@ Or set it up manually:
 You now have durable company memory. Welcome to Day 1.
 
 Want to see the shape before filling your own vault? Open `EXAMPLE_DAY_1.md`.
+
+Using Obsidian? Open `02_Dashboards/DASHBOARD_Link_Map.md` after setup. The generated vault includes a starter wiki-link map, `00_System_Brain/AI_Text_Maintenance_Protocol.md`, and `00_System_Brain/AI_Obsidian_Link_Maintenance_Prompt.md` for asking an AI assistant to keep navigation, dashboards, and handoffs tidy without changing founder decisions.
 
 ---
 
@@ -171,6 +193,8 @@ The vault uses Map of Content files as navigation hubs.
 
 The goal is to avoid folder-tree wandering. Both the human founder and AI context windows start from stable entry points.
 
+V1 also includes `02_Dashboards/DASHBOARD_Link_Map.md`, a starter Obsidian graph map, plus an AI text maintenance protocol for keeping links, dashboards, maps, and handoffs useful without changing the meaning of the notes.
+
 ---
 
 ## Default AI Team
@@ -233,6 +257,7 @@ Once the quickstart is working:
 - `PRODUCT_BOUNDARY.md` defines the free Core and future Pro Pack boundary.
 - `PROJECT_STATUS.md` tracks maintainer-facing release progress without changing reusable template files.
 - `RELEASE_CHECKLIST.md` defines the validation and packaging flow before public release.
+- `00_System_Brain/AI_Text_Maintenance_Protocol.md` defines how AI may maintain dashboards, maps, links, indexes, and handoffs without taking over founder judgment.
 - `scripts/init-vault.ps1` generates a customized vault without paid tools or network calls.
 - `scripts/validate-release.ps1` and `scripts/package-release.ps1` support self-serve release checks and ZIP packaging.
 - `LICENSE` makes the core template usable, forkable, and remixable.
