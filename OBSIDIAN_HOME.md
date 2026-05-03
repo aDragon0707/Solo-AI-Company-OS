@@ -69,6 +69,7 @@ Default roles:
 - Contribution rules: `CONTRIBUTING.md`
 - Launch playbook: `LAUNCH_PLAYBOOK.md`
 - Product boundary: `PRODUCT_BOUNDARY.md`
+- Maintainer project status: `PROJECT_STATUS.md`
 - Release checklist: `RELEASE_CHECKLIST.md`
 - Self-serve setup scripts: `scripts/README.md`
 - License: `LICENSE`
