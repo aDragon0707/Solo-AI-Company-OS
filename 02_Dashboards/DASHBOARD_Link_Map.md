@@ -36,6 +36,7 @@ Rule: Raw thinking can stay messy. Only the decision log creates operating autho
 - [[03_Company/MOC_Project_Evidence|Project Evidence Map]]
 - [[03_Company/MOC_Demo_Package|Demo Package Map]]
 - [[03_Company/Accounts/MOC_Account_TEMPLATE|Account Workspace Template]]
+- [[03_Company/User_Research/README|User Research]]
 
 Rule: Maps help navigation. They do not replace founder decisions, source notes, or worklogs.
 

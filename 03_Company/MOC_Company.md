@@ -14,6 +14,7 @@
 - `Offer_And_Pricing_Model.md`
 - `Customer_Acquisition_Playbook.md`
 - `Demo_Package_Task_List.md`
+- `User_Research/README.md`
 
 ---
 

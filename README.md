@@ -262,6 +262,7 @@ Once the quickstart is working:
 - `PROJECT_STATUS.md` tracks maintainer-facing release progress without changing reusable template files.
 - `RELEASE_CHECKLIST.md` defines the validation and packaging flow before public release.
 - `00_System_Brain/AI_Text_Maintenance_Protocol.md` defines how AI may maintain dashboards, maps, links, indexes, and handoffs without taking over founder judgment.
+- `03_Company/User_Research/` contains public pain research prompts and synthesis for improving positioning and onboarding.
 - `scripts/init-vault.ps1` generates a customized vault without paid tools or network calls.
 - `scripts/validate-release.ps1` and `scripts/package-release.ps1` support self-serve release checks and ZIP packaging.
 - `LICENSE` makes the core template usable, forkable, and remixable.

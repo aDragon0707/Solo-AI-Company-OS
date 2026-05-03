@@ -23,6 +23,7 @@ Start here instead of wandering through the folder tree.
 - Company state dashboard: [[02_Dashboards/DASHBOARD_Company_State|Company State Dashboard]]
 - Obsidian link map: [[02_Dashboards/DASHBOARD_Link_Map|Obsidian Link Map]]
 - Company map: [[03_Company/MOC_Company|Company Map]]
+- User research: [[03_Company/User_Research/README|User Research]]
 - AI employee map: [[03_Company/MOC_AI_Employees|AI Employee Map]]
 - Demo package map: [[03_Company/MOC_Demo_Package|Demo Package Map]]
 - Project evidence map: [[03_Company/MOC_Project_Evidence|Project Evidence Map]]
