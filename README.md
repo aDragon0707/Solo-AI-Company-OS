@@ -56,6 +56,7 @@ Easiest Windows setup:
 2. Unzip it.
 3. Double-click `INSTALL_WINDOWS.bat`.
 4. Open the generated folder in Obsidian.
+5. Open `FIRST_30_MINUTES.md`.
 
 One-command setup:
 
@@ -101,6 +102,8 @@ Or set it up manually:
 You now have durable company memory. Welcome to Day 1.
 
 Want to see the shape before filling your own vault? Open `EXAMPLE_DAY_1.md`.
+
+Want the shortest possible path after install? Open `FIRST_30_MINUTES.md`.
 
 Using Obsidian? Open `02_Dashboards/DASHBOARD_Link_Map.md` after setup. The generated vault includes a starter wiki-link map, `00_System_Brain/AI_Text_Maintenance_Protocol.md`, and `00_System_Brain/AI_Obsidian_Link_Maintenance_Prompt.md` for asking an AI assistant to keep navigation, dashboards, and handoffs tidy without changing founder decisions.
 
@@ -251,6 +254,7 @@ Once the quickstart is working:
 ## Example And Launch Files
 
 - `CODEX_RESTART_PROMPT.md` lets a fresh Codex session recover project context after reinstall.
+- `FIRST_30_MINUTES.md` gives new users the smallest useful Day 1 operating loop.
 - `EXAMPLE_DAY_1.md` shows a fully fake first day inside the system.
 - `CONTRIBUTING.md` defines what kinds of open-source contributions fit this project.
 - `LAUNCH_PLAYBOOK.md` captures the recommended public launch and monetization path.

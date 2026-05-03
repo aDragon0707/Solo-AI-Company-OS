@@ -8,6 +8,7 @@ Start here instead of wandering through the folder tree.
 
 ## 1. Daily Founder Entry
 
+- First 30 minutes: [[FIRST_30_MINUTES|First 30 Minutes]]
 - Founder quick start: [[FOUNDER_START_HERE|Founder Start Here]]
 - Filled first-day example: [[EXAMPLE_DAY_1|Example Day 1]]
 - Founder home: [[01_Founder/FOUNDER_HOME|Founder Home]]

@@ -160,6 +160,7 @@ if ($CreateDay1Worklog) {
 - AI role prompts may need customization.
 
 ## Needs Founder
+- Open FIRST_30_MINUTES.md.
 - Review FOUNDER_START_HERE.md.
 - Fill 01_Founder/FOUNDER_Decision_Log.md.
 - Update 02_Dashboards/DASHBOARD_Company_State.md.

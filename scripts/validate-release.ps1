@@ -83,6 +83,7 @@ if ([string]::IsNullOrWhiteSpace($TestOutputPath)) {
 
 $requiredPaths = @(
     'README.md',
+    'FIRST_30_MINUTES.md',
     'INSTALL.ps1',
     'INSTALL_WINDOWS.bat',
     'LICENSE',
@@ -150,6 +151,7 @@ if (-not $SkipInitTest) {
 
     $generatedRequiredPaths = @(
         'OBSIDIAN_HOME.md',
+        'FIRST_30_MINUTES.md',
         '01_Founder',
         '02_Dashboards\DASHBOARD_Company_State.md',
         '02_Dashboards\DASHBOARD_Link_Map.md',

@@ -20,6 +20,7 @@ Solo-AI-Company-OS helps a solo founder operate a company with AI employees whil
 | What is the current operating state? | `02_Dashboards/DASHBOARD_Company_State.md` |
 | How is the vault linked in Obsidian? | `02_Dashboards/DASHBOARD_Link_Map.md` |
 | How may AI maintain the text system? | `00_System_Brain/AI_Text_Maintenance_Protocol.md` |
+| What should I do in the first session? | `FIRST_30_MINUTES.md` |
 | What should I open next? | `OBSIDIAN_HOME.md` |
 
 If you are tired, busy, or context-switching, start with these files.
@@ -67,15 +68,16 @@ AI must not:
 
 ## 6. First Setup Checklist
 
-1. Rename placeholders: `[Company Name]`, `[Project Name]`, `[Product Name]`.
-2. Fill in your first founder decisions.
-3. Update `02_Dashboards/DASHBOARD_Company_State.md` with the current project state.
-4. Open `02_Dashboards/DASHBOARD_Link_Map.md` in Obsidian and confirm the graph has a usable starting shape.
-5. Customize AI employee role prompts.
-6. Create the first worklog entry.
-7. Build one account workspace from `03_Company/Accounts/MOC_Account_TEMPLATE.md`.
-8. Use AI-05 to map your project before asking for code-level explanations.
-9. If your vault grows, ask an AI assistant to follow `00_System_Brain/AI_Text_Maintenance_Protocol.md`.
+1. Open `FIRST_30_MINUTES.md`.
+2. Rename placeholders: `[Company Name]`, `[Project Name]`, `[Product Name]`.
+3. Fill in your first founder decisions.
+4. Update `02_Dashboards/DASHBOARD_Company_State.md` with the current project state.
+5. Open `02_Dashboards/DASHBOARD_Link_Map.md` in Obsidian and confirm the graph has a usable starting shape.
+6. Customize AI employee role prompts.
+7. Create the first worklog entry.
+8. Build one account workspace from `03_Company/Accounts/MOC_Account_TEMPLATE.md`.
+9. Use AI-05 to map your project before asking for code-level explanations.
+10. If your vault grows, ask an AI assistant to follow `00_System_Brain/AI_Text_Maintenance_Protocol.md`.
 
 ---
 

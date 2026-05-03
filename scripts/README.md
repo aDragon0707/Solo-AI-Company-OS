@@ -21,6 +21,7 @@ Use `init-vault.ps1` to copy this template into a new folder and replace the cor
 The generated vault includes:
 
 - a stable front door at `OBSIDIAN_HOME.md`
+- a first-session guide at `FIRST_30_MINUTES.md`
 - a company state dashboard at `02_Dashboards/DASHBOARD_Company_State.md`
 - AI text maintenance rules at `00_System_Brain/AI_Text_Maintenance_Protocol.md`
 - an Obsidian wiki-link map at `02_Dashboards/DASHBOARD_Link_Map.md`
@@ -69,7 +70,7 @@ The script:
 
 The generated Day 1 worklog records setup only. It does not claim that AI completed business, customer, research, or implementation work.
 
-After setup, open the generated folder in Obsidian and start from `OBSIDIAN_HOME.md`. For dashboard, MOC, worklog-index, handoff, or link cleanup, ask an AI assistant that can edit your vault to follow `00_System_Brain/AI_Text_Maintenance_Protocol.md`.
+After setup, open the generated folder in Obsidian and start from `FIRST_30_MINUTES.md` or `OBSIDIAN_HOME.md`. For dashboard, MOC, worklog-index, handoff, or link cleanup, ask an AI assistant that can edit your vault to follow `00_System_Brain/AI_Text_Maintenance_Protocol.md`.
 
 ---
 
