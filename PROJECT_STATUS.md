@@ -29,6 +29,7 @@ The free Core is usable as a Markdown-first template, and the repo now includes 
 | Release packaging | Done | `scripts/package-release.ps1` builds a ZIP under `dist/`. |
 | Maintainer status sync | Done | `PROJECT_STATUS.md` tracks current repo and launch readiness state. |
 | Codex restart handoff | Done | `CODEX_RESTART_PROMPT.md` lets a fresh session recover context. |
+| Local backup path | Done | Restart prompt points fresh Codex sessions to `F:\_backups\Solo-AI-Company-OS`. |
 
 ---
 
@@ -36,10 +37,10 @@ The free Core is usable as a Markdown-first template, and the repo now includes 
 
 | Commit | Summary |
 |---|---|
+| `2117c80` | Add Codex restart handoff prompt |
 | `bf22ad9` | Sync maintainer project status |
 | `9b83a3d` | Add release validation and packaging scripts |
 | `5f41a12` | Add self-serve vault initialization path |
-| `d1d817a` | Improve open source launch readiness |
 
 ---
 
@@ -63,6 +64,14 @@ F:\Solo-AI-Company-OS\dist\Solo-AI-Company-OS-v0.1.0.zip
 ```
 
 `dist/` is intentionally ignored by Git.
+
+Local timestamped backups are stored under:
+
+```text
+F:\_backups\Solo-AI-Company-OS
+```
+
+Use the newest `Solo-AI-Company-OS_YYYYMMDD_HHMMSS` folder or ZIP if the working copy needs to be restored.
 
 ---
 

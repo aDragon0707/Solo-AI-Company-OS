@@ -29,11 +29,12 @@ Important boundaries:
 First read:
 1. README.md
 2. PROJECT_STATUS.md
-3. PRODUCT_BOUNDARY.md
-4. RELEASE_CHECKLIST.md
-5. LAUNCH_PLAYBOOK.md
-6. scripts/README.md
-7. OBSIDIAN_HOME.md
+3. CODEX_RESTART_PROMPT.md
+4. PRODUCT_BOUNDARY.md
+5. RELEASE_CHECKLIST.md
+6. LAUNCH_PLAYBOOK.md
+7. scripts/README.md
+8. OBSIDIAN_HOME.md
 
 Current known state:
 - Free Core template is implemented.
@@ -41,7 +42,15 @@ Current known state:
 - Release validation script exists at scripts/validate-release.ps1.
 - Release packaging script exists at scripts/package-release.ps1.
 - Local release ZIP is generated under dist/ and ignored by Git.
+- Local timestamped backups are stored under F:\_backups\Solo-AI-Company-OS.
 - Current next external milestone is GitHub remote, v0.1.0 tag, GitHub release, and later Pro Pack payment flow.
+
+Local backup / restore rule:
+- If F:\Solo-AI-Company-OS is missing, damaged, or incomplete, inspect F:\_backups\Solo-AI-Company-OS.
+- Prefer the newest timestamped backup folder or ZIP named Solo-AI-Company-OS_YYYYMMDD_HHMMSS.
+- Each backup should include RESTORE_NOTES.txt and BACKUP_MANIFEST.json.
+- Backups are expected to include .git history and dist release ZIP, but exclude .obsidian local editor state.
+- After restoring, run git status --short --ignored and powershell -ExecutionPolicy Bypass -File .\scripts\validate-release.ps1.
 
 Before changing files:
 1. Run git status --short --ignored.
