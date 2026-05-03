@@ -66,6 +66,7 @@ Default roles:
 
 ## 6. Open-Source Project Files
 
+- Codex restart prompt: `CODEX_RESTART_PROMPT.md`
 - Contribution rules: `CONTRIBUTING.md`
 - Launch playbook: `LAUNCH_PLAYBOOK.md`
 - Product boundary: `PRODUCT_BOUNDARY.md`

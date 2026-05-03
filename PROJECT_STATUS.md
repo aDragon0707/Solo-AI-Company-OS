@@ -27,6 +27,8 @@ The free Core is usable as a Markdown-first template, and the repo now includes 
 | Self-serve initialization | Done | `scripts/init-vault.ps1` generates customized vaults. |
 | Release validation | Done | `scripts/validate-release.ps1` performs required release checks. |
 | Release packaging | Done | `scripts/package-release.ps1` builds a ZIP under `dist/`. |
+| Maintainer status sync | Done | `PROJECT_STATUS.md` tracks current repo and launch readiness state. |
+| Codex restart handoff | Done | `CODEX_RESTART_PROMPT.md` lets a fresh session recover context. |
 
 ---
 
@@ -34,10 +36,10 @@ The free Core is usable as a Markdown-first template, and the repo now includes 
 
 | Commit | Summary |
 |---|---|
+| `bf22ad9` | Sync maintainer project status |
 | `9b83a3d` | Add release validation and packaging scripts |
 | `5f41a12` | Add self-serve vault initialization path |
 | `d1d817a` | Improve open source launch readiness |
-| `4f0e8bd` | Initial commit: Solo-AI-Company-OS template |
 
 ---
 
@@ -85,6 +87,7 @@ F:\Solo-AI-Company-OS\dist\Solo-AI-Company-OS-v0.1.0.zip
 5. Choose the first payment platform for a future Pro Pack.
 6. Draft the first Pro Pack offer page without building Pro content yet.
 7. Share the free Core with a small group before broad launch.
+8. After any Codex reinstall, start the new session with `CODEX_RESTART_PROMPT.md`.
 
 ---
 

@@ -226,6 +226,7 @@ Once the quickstart is working:
 
 ## Example And Launch Files
 
+- `CODEX_RESTART_PROMPT.md` lets a fresh Codex session recover project context after reinstall.
 - `EXAMPLE_DAY_1.md` shows a fully fake first day inside the system.
 - `CONTRIBUTING.md` defines what kinds of open-source contributions fit this project.
 - `LAUNCH_PLAYBOOK.md` captures the recommended public launch and monetization path.
