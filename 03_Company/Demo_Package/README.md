@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/Demo_Package/README.md|简体中文]]
 # Demo Package
 
 **Purpose:** Store reusable customer-facing templates.

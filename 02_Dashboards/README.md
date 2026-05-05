@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/02_Dashboards/README.md|简体中文]]
 # Dashboards
 
 **Purpose:** Keep the current operating state visible without replacing founder decisions or worklogs.

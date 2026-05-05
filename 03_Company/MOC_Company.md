@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/MOC_Company.md|简体中文]]
 # MOC - Company
 
 **Purpose:** Navigation map for company operations.

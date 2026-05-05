@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/User_Research/PUBLIC_PAIN_RESEARCH_SYNTHESIS.md|简体中文]]
 # Public Pain Research Synthesis
 
 **Purpose:** Translate public pain signals into positioning and product decisions for Solo-AI-Company-OS.

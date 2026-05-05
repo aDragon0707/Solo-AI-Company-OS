@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/RELEASE_CHECKLIST.md|简体中文]]
 # Release Checklist
 
 **Purpose:** Publish Solo-AI-Company-OS without leaking private context or shipping a broken self-serve package.

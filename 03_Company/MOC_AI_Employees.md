@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/MOC_AI_Employees.md|简体中文]]
 # MOC - AI Employees
 
 **Purpose:** Navigate AI employee roles, prompts, coordination rules, and worklogs.

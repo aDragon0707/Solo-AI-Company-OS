@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/AI_Employees/README.md|简体中文]]
 # AI Employees - Daily Entry
 
 **Purpose:** Choose the right AI employee for a task and start with the correct role prompt.

@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/00_System_Brain/V2_Cognitive_OS_Roadmap.md|简体中文]]
 # Solo-AI-Company-OS v2: Cognitive Operating System Roadmap
 
 ## Vision: The Nervous System Over The Skeleton

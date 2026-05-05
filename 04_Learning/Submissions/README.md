@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/Submissions/README.md|简体中文]]
 # Founder Homework Submissions
 
 **Purpose:** Store written founder learning submissions.

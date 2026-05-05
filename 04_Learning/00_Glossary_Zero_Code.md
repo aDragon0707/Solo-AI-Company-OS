@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/00_Glossary_Zero_Code.md|简体中文]]
 # Zero-Code Glossary
 
 **Purpose:** Short definitions for founder-level technical literacy.

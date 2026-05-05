@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/Product_Strategy.md|简体中文]]
 # Product Strategy
 
 **Purpose:** Define what the company sells, who it serves, and what it refuses to overclaim.
@@ -7,13 +8,13 @@
 ## 1. Product Placeholder
 
 ```text
-[Product Name]
+My AI Collaboration OS
 ```
 
 One-line description:
 
 ```text
-[Product Name] helps [Customer Segment] understand [Business Problem] using reviewable source material, structured analysis, and disciplined claim boundaries.
+My AI Collaboration OS helps [Customer Segment] understand [Business Problem] using reviewable source material, structured analysis, and disciplined claim boundaries.
 ```
 
 ---

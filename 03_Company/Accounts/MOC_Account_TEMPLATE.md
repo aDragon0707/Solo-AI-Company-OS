@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/Accounts/MOC_Account_TEMPLATE.md|简体中文]]
 # MOC - [Target Account]
 
 **Purpose:** Account-specific navigation page.

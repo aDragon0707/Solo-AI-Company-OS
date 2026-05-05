@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/OBSIDIAN_HOME.md|简体中文]]
 # Solo-AI-Company-OS Home
 
 **Purpose:** Main Obsidian front door for the founder and AI employees.

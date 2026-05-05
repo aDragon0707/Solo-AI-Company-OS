@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/01_Founder/FOUNDER_Log_Templates.md|简体中文]]
 # Founder Log Templates
 
 **Purpose:** Copyable templates for founder thinking, decisions, and retrospectives.

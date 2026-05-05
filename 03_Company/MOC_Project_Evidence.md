@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/MOC_Project_Evidence.md|简体中文]]
 # MOC - Project Evidence
 
 **Purpose:** Connect company-facing material to project truth without exposing proprietary implementation detail.

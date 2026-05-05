@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/01_Founder/FOUNDER_Retrospective_Log.md|简体中文]]
 # Founder Retrospective Log
 
 **Purpose:** Record daily or weekly founder reflection.

@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/04_Homework_Operating_Systems.md|简体中文]]
 # Homework 04 - Operating Systems And Work Control
 
 **Purpose:** Understand how systems manage multiple tasks without losing control.
@@ -26,7 +27,7 @@ The company OS does the same with AI employees.
 Explain this in founder language:
 
 ```text
-Why should [Project Name] control task order instead of letting every task run at once?
+Why should My AI Collaboration OS control task order instead of letting every task run at once?
 ```
 
 Then answer:

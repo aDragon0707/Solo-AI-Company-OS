@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/Submissions/Day1_Project_Model_TEMPLATE.md|简体中文]]
 # Day 1 - Project Model
 
 ## Module Or Concept

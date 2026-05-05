@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/README.md|简体中文]]
 # Company Workspace
 
 **Purpose:** Manage company operations, AI employees, customer-facing assets, accounts, and worklogs without mixing them into founder decision ledgers or project source truth.

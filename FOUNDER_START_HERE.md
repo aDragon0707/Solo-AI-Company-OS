@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/FOUNDER_START_HERE.md|简体中文]]
 # Founder Start Here
 
 **Purpose:** A short orientation for using Solo-AI-Company-OS.
@@ -69,7 +70,7 @@ AI must not:
 ## 6. First Setup Checklist
 
 1. Open `FIRST_30_MINUTES.md`.
-2. Rename placeholders: `[Company Name]`, `[Project Name]`, `[Product Name]`.
+2. Rename placeholders: `My AI Collaboration OS`, `My AI Collaboration OS`, `My AI Collaboration OS`.
 3. Fill in your first founder decisions.
 4. Update `02_Dashboards/DASHBOARD_Company_State.md` with the current project state.
 5. Open `02_Dashboards/DASHBOARD_Link_Map.md` in Obsidian and confirm the graph has a usable starting shape.

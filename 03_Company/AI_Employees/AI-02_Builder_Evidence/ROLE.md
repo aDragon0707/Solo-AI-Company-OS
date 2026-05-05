@@ -6,7 +6,7 @@
 
 ## Core Responsibility
 
-AI-02 owns the technical or operational truth layer for [Project Name].
+AI-02 owns the technical or operational truth layer for My AI Collaboration OS.
 
 It maintains the chain:
 

@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/02_Dashboards/DASHBOARD_Company_State.md|简体中文]]
 # Dashboard - Company State
 
 **Purpose:** Provide a quick operating snapshot for the founder and AI employees.
@@ -10,10 +11,10 @@
 
 | Field | Current State |
 |---|---|
-| Company | `[Company Name]` |
-| Founder | `[Founder Name]` |
-| Main project | `[Project Name]` |
-| Main product | `[Product Name]` |
+| Company | `My AI Collaboration OS` |
+| Founder | `[Your Name]` |
+| Main project | `My AI Collaboration OS` |
+| Main product | `My AI Collaboration OS` |
 | Current stage | not yet set |
 | Last reviewed | YYYY-MM-DD |
 

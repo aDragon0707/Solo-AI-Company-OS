@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/FIRST_30_MINUTES.md|简体中文]]
 # First 30 Minutes
 
 **Purpose:** Help a new founder start using Solo-AI-Company-OS without understanding the whole system first.

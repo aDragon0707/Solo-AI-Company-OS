@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/AI_Worklogs/WORKLOG_INDEX.md|简体中文]]
 # Worklog Index
 
 **Purpose:** Track AI worklogs so the founder and AI employees know what was done, what is blocked, and who owns the next step.

@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/AI-05_Code_Tutor.md|简体中文]]
 # AI-05 Code Tutor
 
 **Purpose:** Define how AI-05 teaches the founder to understand systems and code.

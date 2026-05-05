@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/00_System_Brain/System_Principles.md|简体中文]]
 # System Principles
 
 **Purpose:** Define the non-negotiable rules for operating a solo company with AI employees.

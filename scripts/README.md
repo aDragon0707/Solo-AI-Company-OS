@@ -46,10 +46,10 @@ powershell -ExecutionPolicy Bypass -File .\scripts\init-vault.ps1 `
 | Parameter | Required | Purpose |
 |---|---|---|
 | `-OutputPath` | yes | Destination folder for the generated vault |
-| `-CompanyName` | yes | Replaces `[Company Name]` |
+| `-CompanyName` | yes | Replaces `My AI Collaboration OS` |
 | `-FounderName` | yes | Replaces `[Founder Name]` |
-| `-ProjectName` | yes | Replaces `[Project Name]` |
-| `-ProductName` | yes | Replaces `[Product Name]` |
+| `-ProjectName` | yes | Replaces `My AI Collaboration OS` |
+| `-ProductName` | yes | Replaces `My AI Collaboration OS` |
 | `-Force` | no | Replaces an existing output folder |
 | `-CreateDay1Worklog` | no | Adds a setup-only AI-01 worklog |
 

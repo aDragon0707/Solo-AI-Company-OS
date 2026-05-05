@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/EXAMPLE_DAY_1.md|简体中文]]
 # Example Day 1
 
 **Purpose:** Show what a filled-in first day can look like without using a real company, client, or product.

@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/00_System_Brain/Claim_Boundary_Principles.md|简体中文]]
 # Claim Boundary Principles
 
 **Purpose:** Prevent the company from turning partial truth into overconfident public claims.

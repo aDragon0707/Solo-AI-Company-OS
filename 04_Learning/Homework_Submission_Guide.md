@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/Homework_Submission_Guide.md|简体中文]]
 # Homework Submission Guide
 
 **Purpose:** Explain how the founder submits learning work to AI-05.

@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/10_First_7_Days.md|简体中文]]
 # First 7 Days
 
 **Purpose:** A one-week learning path for a founder who wants system understanding without drowning in code.
@@ -29,7 +30,7 @@ Read:
 Do:
 
 ```text
-Identify one object, list, or dictionary in [Project Name].
+Identify one object, list, or dictionary in My AI Collaboration OS.
 Explain what company concept it represents.
 ```
 
@@ -107,7 +108,7 @@ Explain why AI should preserve uncertainty instead of filling every blank.
 The founder should be able to say:
 
 ```text
-I understand the main topology of [Project Name].
+I understand the main topology of My AI Collaboration OS.
 I can describe why a module exists before asking how the code works.
 I know which claims need verification before they can be used.
 ```
