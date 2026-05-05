@@ -70,6 +70,12 @@ Good places for translation or tutorials:
 - `examples/`
 - a clearly named language pack folder
 
+Recommended first Chinese pack:
+
+```text
+docs/zh/
+```
+
 Translation and tutorial pull requests should:
 
 - preserve the English Core unless the PR explicitly explains why a Core phrase should change
@@ -77,6 +83,30 @@ Translation and tutorial pull requests should:
 - explain any terms that do not translate cleanly
 - avoid private user stories or real business data
 - show the simplest installation path first
+
+Chinese material should focus on:
+
+- installation walkthroughs
+- first-session guidance
+- screenshots and step-by-step explanations
+- glossary for terms like founder decision, worklog, handoff, dashboard, MOC, and AI employee
+- Chinese summaries that point back to the canonical English Core files
+
+Chinese material should not:
+
+- fork the functional system into a separate Chinese Core
+- duplicate every AI prompt into a second maintained prompt set
+- change link targets in a way that breaks Obsidian navigation
+- make the Chinese guide the source of truth for AI behavior
+
+Prompt policy:
+
+```text
+Canonical AI prompts stay in the English Core.
+Chinese guides may explain how to use them, but should link back to the English prompt files.
+```
+
+This keeps the system maintainable and prevents English and Chinese behavior from drifting apart.
 
 For a first Chinese tutorial, prioritize:
 
