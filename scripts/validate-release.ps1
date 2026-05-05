@@ -84,6 +84,10 @@ if ([string]::IsNullOrWhiteSpace($TestOutputPath)) {
 $requiredPaths = @(
     'README.md',
     'FIRST_30_MINUTES.md',
+    'docs\zh\README.md',
+    'docs\zh\QUICKSTART.md',
+    'docs\zh\GLOSSARY.md',
+    'docs\zh\FIRST_RUN_EXAMPLE.md',
     'INSTALL.ps1',
     'INSTALL_WINDOWS.bat',
     'LICENSE',

@@ -44,6 +44,13 @@ Use this if you want a lightweight company memory system before you build heavie
 
 Do not use this if you want an auto-running agent platform, a task app clone, a personal knowledge management theme, or a set of one-off prompts.
 
+Chinese onboarding:
+
+- `docs/zh/README.md`
+- `docs/zh/QUICKSTART.md`
+- `docs/zh/GLOSSARY.md`
+- `docs/zh/FIRST_RUN_EXAMPLE.md`
+
 ---
 
 ## 15-Minute Quickstart
@@ -255,6 +262,7 @@ Once the quickstart is working:
 
 - `CODEX_RESTART_PROMPT.md` lets a fresh Codex session recover project context after reinstall.
 - `FIRST_30_MINUTES.md` gives new users the smallest useful Day 1 operating loop.
+- `docs/zh/` provides Chinese onboarding guides without forking the English Core prompts.
 - `EXAMPLE_DAY_1.md` shows a fully fake first day inside the system.
 - `CONTRIBUTING.md` defines what kinds of open-source contributions fit this project.
 - `LAUNCH_PLAYBOOK.md` captures the recommended public launch and monetization path.

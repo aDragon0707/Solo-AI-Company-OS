@@ -76,6 +76,13 @@ Recommended first Chinese pack:
 docs/zh/
 ```
 
+Current Chinese onboarding files:
+
+- `docs/zh/README.md`
+- `docs/zh/QUICKSTART.md`
+- `docs/zh/GLOSSARY.md`
+- `docs/zh/FIRST_RUN_EXAMPLE.md`
+
 Translation and tutorial pull requests should:
 
 - preserve the English Core unless the PR explicitly explains why a Core phrase should change
