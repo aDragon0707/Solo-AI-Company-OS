@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/01_Founder/FOUNDER_HOME.md|简体中文]]
 # Founder Home
 
 **Purpose:** Central entry point for founder thinking, decisions, and retrospectives.

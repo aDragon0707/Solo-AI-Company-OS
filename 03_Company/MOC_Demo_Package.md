@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/MOC_Demo_Package.md|简体中文]]
 # MOC - Demo Package
 
 **Purpose:** Navigate reusable customer-facing templates.

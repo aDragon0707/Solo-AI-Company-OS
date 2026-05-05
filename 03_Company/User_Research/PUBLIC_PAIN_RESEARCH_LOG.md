@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/User_Research/PUBLIC_PAIN_RESEARCH_LOG.md|简体中文]]
 # Public Pain Research Log
 
 **Purpose:** Keep lightweight notes from public discussions before turning them into product changes.

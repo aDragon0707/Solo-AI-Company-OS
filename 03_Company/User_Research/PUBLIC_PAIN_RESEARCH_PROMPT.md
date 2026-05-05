@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/User_Research/PUBLIC_PAIN_RESEARCH_PROMPT.md|简体中文]]
 # Public Pain Research Prompt
 
 **Purpose:** Give a new AI research window a focused job: mine public discussions for real pain around solo work, AI collaboration, context loss, handoff, and operating systems.

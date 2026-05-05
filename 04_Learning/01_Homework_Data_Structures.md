@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/01_Homework_Data_Structures.md|简体中文]]
 # Homework 01 - Data Structures
 
 **Purpose:** Learn that data structures are how the company names and moves information.
@@ -20,7 +21,7 @@ This is what must not be guessed.
 
 ## 2. Required Exercise
 
-Choose one structured object in [Project Name].
+Choose one structured object in My AI Collaboration OS.
 
 Answer:
 

@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/PRODUCT_BOUNDARY.md|简体中文]]
 # Product Boundary
 
 **Purpose:** Define what belongs in the free open-source Core, what can become a future Pro Pack, and what must never be hidden behind paid access.

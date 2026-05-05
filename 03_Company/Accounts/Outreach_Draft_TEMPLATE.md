@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/Accounts/Outreach_Draft_TEMPLATE.md|简体中文]]
 # Outreach Draft - [Target Account]
 
 **Purpose:** Draft account-specific outreach for founder review.
@@ -18,7 +19,7 @@
 
 Hi [Name],
 
-I am building [Product Name], a system for helping [Customer Segment] review [Business Problem] using structured source material and careful analysis.
+I am building My AI Collaboration OS, a system for helping [Customer Segment] review [Business Problem] using structured source material and careful analysis.
 
 I noticed [generic account-relevant observation].
 
@@ -26,7 +27,7 @@ Would it be useful if I shared a short, private sample of how this type of revie
 
 Best,
 
-[Founder Name]
+[Your Name]
 
 ---
 

@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/02_Homework_Networks.md|简体中文]]
 # Homework 02 - External Inputs And Networks
 
 **Purpose:** Understand how information enters the system from outside.

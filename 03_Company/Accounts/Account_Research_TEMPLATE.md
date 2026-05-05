@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/Accounts/Account_Research_TEMPLATE.md|简体中文]]
 # Account Research - [Target Account]
 
 **Purpose:** Collect account context before outreach.

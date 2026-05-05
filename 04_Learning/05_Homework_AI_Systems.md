@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/05_Homework_AI_Systems.md|简体中文]]
 # Homework 05 - AI Systems And Boundaries
 
 **Purpose:** Understand how AI should assist without corrupting truth or decisions.

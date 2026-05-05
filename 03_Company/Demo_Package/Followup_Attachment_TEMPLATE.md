@@ -1,4 +1,5 @@
-# Follow-Up Attachment - [Product Name]
+> 🌐 Language: **English** | [[zh/03_Company/Demo_Package/Followup_Attachment_TEMPLATE.md|简体中文]]
+# Follow-Up Attachment - My AI Collaboration OS
 
 Hi [Name],
 

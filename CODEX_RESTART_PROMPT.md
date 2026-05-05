@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/CODEX_RESTART_PROMPT.md|简体中文]]
 # Codex Restart Prompt
 
 **Purpose:** Restart Codex or another AI coding agent with enough context to continue Solo-AI-Company-OS after a reinstall.

@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/User_Research/README.md|简体中文]]
 # User Research
 
 **Purpose:** Collect public pain signals and turn them into better onboarding, positioning, examples, and product decisions.

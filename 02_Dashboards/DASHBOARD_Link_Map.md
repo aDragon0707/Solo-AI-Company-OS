@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/02_Dashboards/DASHBOARD_Link_Map.md|简体中文]]
 # Dashboard - Obsidian Link Map
 
 **Purpose:** Make the human-AI collaboration system navigable as an Obsidian graph, not just a folder tree.

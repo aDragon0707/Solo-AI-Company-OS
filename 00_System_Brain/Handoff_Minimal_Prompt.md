@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/00_System_Brain/Handoff_Minimal_Prompt.md|简体中文]]
 # Handoff Minimal Prompt
 
 **Purpose:** Give a new AI session enough context to resume work without rereading the entire vault.
@@ -9,7 +10,7 @@ Copy this prompt into a new AI window and fill the placeholders.
 ## Minimal Prompt
 
 ```text
-You are working inside [Company Name]'s Solo-AI-Company-OS vault.
+You are working inside My AI Collaboration OS's Solo-AI-Company-OS vault.
 
 First read:
 1. [Vault Root]/FOUNDER_START_HERE.md

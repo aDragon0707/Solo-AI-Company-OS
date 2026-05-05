@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/01_Founder/FOUNDER_Decision_Log.md|简体中文]]
 # Founder Decision Log
 
 **Purpose:** Record confirmed founder decisions.

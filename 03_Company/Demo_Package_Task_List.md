@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/Demo_Package_Task_List.md|简体中文]]
 # Demo Package Task List
 
 **Purpose:** Track reusable customer-facing materials without confusing them with source truth.

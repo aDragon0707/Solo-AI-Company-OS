@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/LAUNCH_PLAYBOOK.md|简体中文]]
 # Launch Playbook
 
 **Purpose:** Help maintainers publish Solo-AI-Company-OS clearly without turning it into hype or heavy software too early.

@@ -1,4 +1,5 @@
-# One-Page Sample - [Product Name]
+> 🌐 Language: **English** | [[zh/03_Company/Demo_Package/One_Page_Sample_TEMPLATE.md|简体中文]]
+# One-Page Sample - My AI Collaboration OS
 
 **Audience:** [Customer Segment]
 
@@ -6,7 +7,7 @@
 
 ## What This Helps You Understand
 
-[Product Name] helps [Customer Segment] review [Business Problem] across [Vendor/Platform] or related workflows using structured source material and disciplined analysis.
+My AI Collaboration OS helps [Customer Segment] review [Business Problem] across [Vendor/Platform] or related workflows using structured source material and disciplined analysis.
 
 ---
 

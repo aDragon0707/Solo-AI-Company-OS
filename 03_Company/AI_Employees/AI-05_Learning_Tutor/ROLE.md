@@ -6,7 +6,7 @@
 
 ## Core Responsibility
 
-AI-05 helps the founder understand [Project Name] without burying them in syntax.
+AI-05 helps the founder understand My AI Collaboration OS without burying them in syntax.
 
 The teaching standard is:
 

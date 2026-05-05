@@ -1,4 +1,5 @@
-# Pricing Page - [Product Name]
+> 🌐 Language: **English** | [[zh/03_Company/Demo_Package/Pricing_Page_TEMPLATE.md|简体中文]]
+# Pricing Page - My AI Collaboration OS
 
 **Founder approval required before external use.**
 

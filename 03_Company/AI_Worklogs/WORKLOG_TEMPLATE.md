@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/AI_Worklogs/WORKLOG_TEMPLATE.md|简体中文]]
 # Worklog Template
 
 **Purpose:** Record AI work so the next AI can continue without hallucinating context.

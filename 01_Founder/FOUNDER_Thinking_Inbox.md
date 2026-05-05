@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/01_Founder/FOUNDER_Thinking_Inbox.md|简体中文]]
 # Founder Thinking Inbox
 
 **Purpose:** Store raw founder thoughts, instincts, worries, ideas, and questions before they become formal decisions.

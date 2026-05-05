@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/Customer_Acquisition_Playbook.md|简体中文]]
 # Customer Acquisition Playbook
 
 **Purpose:** Provide a generic system for finding, contacting, and qualifying customers.

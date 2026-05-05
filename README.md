@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/README.md|简体中文]]
 # Solo-AI-Company-OS
 
 **Stop losing your AI company inside chat history.**
@@ -84,7 +85,7 @@ Or set it up manually:
    Open this folder in Obsidian, VS Code, Cursor, or any Markdown editor.
 
 2. **Claim the system**
-   Open `FOUNDER_START_HERE.md` and replace `[Company Name]`, `[Project Name]`, and `[Product Name]`.
+   Open `FOUNDER_START_HERE.md` and replace `My AI Collaboration OS`, `My AI Collaboration OS`, and `My AI Collaboration OS`.
 
 3. **Write your first founder decision**
    Open `01_Founder/FOUNDER_Decision_Log.md` and create:

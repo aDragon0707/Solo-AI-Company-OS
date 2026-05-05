@@ -1,6 +1,7 @@
+> 🌐 Language: **English** | [[zh/04_Learning/README.md|简体中文]]
 # Founder Learning Lab
 
-**Purpose:** Help the founder understand [Project Name] as an operator and architect, not as a passive user of AI output.
+**Purpose:** Help the founder understand My AI Collaboration OS as an operator and architect, not as a passive user of AI output.
 
 **Tutor:** `03_Company/AI_Employees/AI-05_Learning_Tutor/START_PROMPT.md`
 
@@ -76,7 +77,7 @@ Practice code goes in:
 At the end of the first week, the founder should be able to say:
 
 ```text
-[Project Name] has a planned topology.
+My AI Collaboration OS has a planned topology.
 Each module exists to protect a specific flow, decision, or risk boundary.
 I can identify where a module sits before asking how its code works.
 ```

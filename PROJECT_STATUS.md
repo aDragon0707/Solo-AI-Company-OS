@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/PROJECT_STATUS.md|简体中文]]
 # Project Status
 
 **Purpose:** Maintain the current maintainer-facing progress state for Solo-AI-Company-OS without polluting the reusable template files.

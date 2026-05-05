@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/00_System_Brain/AI_Text_Maintenance_Protocol.md|简体中文]]
 # AI Text Maintenance Protocol
 
 **Purpose:** Define how AI assistants may maintain the vault as an operating system without taking over founder judgment.

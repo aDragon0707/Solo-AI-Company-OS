@@ -1,6 +1,7 @@
+> 🌐 Language: **English** | [[zh/04_Learning/00_Project_Map_For_Founder.md|简体中文]]
 # Project Map For Founder
 
-**Purpose:** Help the founder understand [Project Name] by topology before code.
+**Purpose:** Help the founder understand My AI Collaboration OS by topology before code.
 
 ---
 

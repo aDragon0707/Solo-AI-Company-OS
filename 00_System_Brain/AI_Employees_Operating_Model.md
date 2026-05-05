@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/00_System_Brain/AI_Employees_Operating_Model.md|简体中文]]
 # AI Employees Operating Model
 
 **Purpose:** Explain how AI employees fit into the company operating system, where stable principles live, and where daily working prompts live.

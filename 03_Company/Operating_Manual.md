@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/Operating_Manual.md|简体中文]]
 # Operating Manual
 
 **Purpose:** Give the founder a practical operating model for running a solo company with AI employees.

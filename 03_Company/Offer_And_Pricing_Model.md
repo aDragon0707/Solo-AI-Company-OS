@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/03_Company/Offer_And_Pricing_Model.md|简体中文]]
 # Offer And Pricing Model
 
 **Purpose:** Keep pricing and scope explicit so AI employees do not invent customer commitments.

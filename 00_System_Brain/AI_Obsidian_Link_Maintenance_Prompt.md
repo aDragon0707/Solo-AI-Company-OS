@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/00_System_Brain/AI_Obsidian_Link_Maintenance_Prompt.md|简体中文]]
 # AI Obsidian Link Maintenance Prompt
 
 **Purpose:** Give an AI assistant a precise job: improve Obsidian wiki links without changing the substance of the vault.

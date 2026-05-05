@@ -1,3 +1,4 @@
+> 🌐 Language: **English** | [[zh/04_Learning/00_Start_Here_Zero_Code.md|简体中文]]
 # Start Here - Zero-Code Founder
 
 **Purpose:** Begin learning the system without getting lost in implementation details.
@@ -59,7 +60,7 @@ A line a module or AI employee must not cross.
 
 ## 4. First Assignment
 
-Pick one module or file in [Project Name].
+Pick one module or file in My AI Collaboration OS.
 
 Write:
 
