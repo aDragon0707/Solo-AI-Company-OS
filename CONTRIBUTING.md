@@ -27,6 +27,7 @@ When in doubt, prefer clarity over cleverness.
 These are welcome:
 
 - clearer onboarding text
+- Chinese onboarding guides and translation packs
 - better examples using fully fictional companies
 - improved role prompts for AI employees
 - stronger worklog and handoff templates
@@ -35,6 +36,53 @@ These are welcome:
 - typo fixes and broken link fixes
 - launch materials that explain the system without hype
 - issue templates and pull request templates
+
+---
+
+## Branch And Pull Request Flow
+
+Please open pull requests against:
+
+```text
+develop
+```
+
+The maintainer will review changes in `develop` before merging stable updates into `main`.
+
+Use small pull requests when possible:
+
+- one translation pack
+- one tutorial
+- one onboarding improvement
+- one bug fix
+
+Avoid mixing translation, structure changes, and new product ideas in the same pull request.
+
+---
+
+## Translation And Tutorial Contributions
+
+Chinese onboarding material is welcome.
+
+Good places for translation or tutorials:
+
+- `docs/`
+- `examples/`
+- a clearly named language pack folder
+
+Translation and tutorial pull requests should:
+
+- preserve the English Core unless the PR explicitly explains why a Core phrase should change
+- keep filenames and links stable when possible
+- explain any terms that do not translate cleanly
+- avoid private user stories or real business data
+- show the simplest installation path first
+
+For a first Chinese tutorial, prioritize:
+
+```text
+Download ZIP -> unzip -> double-click INSTALL_WINDOWS.bat -> open Obsidian -> read FIRST_30_MINUTES.md
+```
 
 ---
 
