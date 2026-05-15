@@ -2,11 +2,40 @@
 
 **Purpose:** Choose the right AI employee for a task and start with the correct role prompt.
 
-**Coordination rules:** `COORDINATION_PROTOCOL.md`
+如果你是第一次使用，先打开：
+
+```text
+AI_EMPLOYEE_COMMAND_CENTER.md
+```
+
+That command center is the user-facing dispatch desk. This file is the role directory.
 
 ---
 
-## 1. Which AI Should Work?
+## Fast Path
+
+1. Open `AI_EMPLOYEE_COMMAND_CENTER.md`.
+2. Pick one AI employee by task type.
+3. Copy that employee's `START_PROMPT.md`.
+4. Add the current task.
+5. Require a worklog or explicit no-worklog reason before closing.
+
+Coordination rules:
+
+```text
+COORDINATION_PROTOCOL.md
+```
+
+Skill reference:
+
+```text
+03_Company/Skills/AGENT_SKILL_MATRIX.md
+03_Company/Skills/SKILL_LIBRARY.md
+```
+
+---
+
+## Default AI Employees
 
 ### AI-01 Founder Office / PMO
 
@@ -75,12 +104,12 @@ Read:
 
 ---
 
-## 2. Rule For Every AI Window
+## Rule For Every AI Window
 
 Every AI starts by reading:
 
-1. founder decision log
-2. relevant dashboard
+1. relevant founder-approved decision or task brief
+2. relevant dashboard or project state
 3. its own role file
 4. coordination protocol
 5. worklog index

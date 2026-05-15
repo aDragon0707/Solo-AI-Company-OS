@@ -16,6 +16,31 @@
 ### Work Completed
 - [What was actually done]
 
+### Authority Packet
+Current goal:
+Authoritative files:
+Do not read:
+Max files to read:
+Acceptance criteria:
+Stop condition:
+Allowed actions:
+Forbidden actions:
+Verification plan:
+
+### State Confidence
+Verified now:
+Trusted snapshot:
+Stale log:
+Model inference:
+Unknown:
+
+### Worklog Brief
+What happened:
+Evidence kept:
+Evidence discarded:
+Current blocker:
+Next reviewer action:
+
 ### Files Changed
 - [Files changed or created]
 

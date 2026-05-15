@@ -4,6 +4,8 @@ param(
     [string]$FounderName,
     [string]$ProjectName,
     [string]$ProductName,
+    [ValidateSet('en', 'zh-CN')]
+    [string]$Language = 'en',
     [switch]$Force,
     [switch]$CreateDay1Worklog
 )
@@ -113,12 +115,36 @@ $replacements = [ordered]@{
 
 $textExtensions = @('.md', '.txt', '.svg', '.json', '.yaml', '.yml')
 
+if ($Language -eq 'zh-CN') {
+    $localeRoot = Join-Path -Path $sourceRoot -ChildPath 'locales\zh-CN'
+    if (-not (Test-Path -LiteralPath $localeRoot)) {
+        throw "Missing zh-CN locale overlay: $localeRoot"
+    }
+
+    $localeWithSlash = Add-TrailingSeparator -Path $localeRoot
+    $localeRootLength = $localeWithSlash.Length
+
+    Get-ChildItem -LiteralPath $localeRoot -Force -Recurse | ForEach-Object {
+        $relativePath = $_.FullName.Substring($localeRootLength)
+        $destinationPath = Join-Path -Path $outputRoot -ChildPath $relativePath
+
+        if ($_.PSIsContainer) {
+            New-Item -ItemType Directory -Force -Path $destinationPath | Out-Null
+            return
+        }
+
+        $destinationParent = Split-Path -Parent $destinationPath
+        New-Item -ItemType Directory -Force -Path $destinationParent | Out-Null
+        Copy-Item -LiteralPath $_.FullName -Destination $destinationPath -Force
+    }
+}
+
 Get-ChildItem -LiteralPath $outputRoot -Force -Recurse -File | ForEach-Object {
     if ($textExtensions -notcontains $_.Extension) {
         return
     }
 
-    $content = Get-Content -LiteralPath $_.FullName -Raw
+    $content = Get-Content -LiteralPath $_.FullName -Raw -Encoding UTF8
     foreach ($placeholder in $replacements.Keys) {
         $content = $content.Replace($placeholder, $replacements[$placeholder])
     }
@@ -143,6 +169,7 @@ if ($CreateDay1Worklog) {
 
 ## Work Completed
 - Created a new vault for $CompanyName.
+- Applied language overlay: $Language.
 - Replaced core placeholders for company, founder, project, and product.
 - Created this setup record.
 
@@ -160,6 +187,7 @@ if ($CreateDay1Worklog) {
 - AI role prompts may need customization.
 
 ## Needs Founder
+- Open START_HERE.md.
 - Open FIRST_30_MINUTES.md.
 - Review FOUNDER_START_HERE.md.
 - Fill 01_Founder/FOUNDER_Decision_Log.md.
@@ -178,7 +206,7 @@ Files Read: Template files copied by script, including AI text maintenance proto
 Files Changed: Generated vault files.
 Verification Status: Setup script completed.
 Known Gaps: No founder-approved operating decisions yet.
-Next AI Needs: Read founder decision log, company state dashboard, AI text maintenance protocol, link map, coordination protocol, and worklog index.
+Next AI Needs: Read START_HERE, founder decision log, company state dashboard, AI text maintenance protocol, link map, coordination protocol, skill matrix, and worklog index.
 Do Not Assume: Do not treat setup as evidence of business progress.
 Founder Decision Needed: Initial operating boundaries and first project priority.
 

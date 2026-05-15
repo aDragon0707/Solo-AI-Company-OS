@@ -4,6 +4,8 @@ param(
     [string]$FounderName,
     [string]$ProjectName,
     [string]$ProductName,
+    [ValidateSet('en', 'zh-CN')]
+    [string]$Language,
     [switch]$Force,
     [switch]$NoOpenFolder
 )
@@ -84,6 +86,10 @@ $WorkspaceName = Read-Value -CurrentValue $WorkspaceName -Prompt 'Workspace name
 $FounderName = Read-Value -CurrentValue $FounderName -Prompt 'Your name' -DefaultValue $defaultFounderName
 $ProjectName = Read-Value -CurrentValue $ProjectName -Prompt 'Primary project name' -DefaultValue $WorkspaceName
 $ProductName = Read-Value -CurrentValue $ProductName -Prompt 'Primary product, offer, or deliverable name' -DefaultValue $ProjectName
+$Language = Read-Value -CurrentValue $Language -Prompt 'Vault language: en or zh-CN' -DefaultValue 'en'
+if ($Language -notin @('en', 'zh-CN')) {
+    throw "Unsupported language: $Language. Use en or zh-CN."
+}
 
 $safeFolderName = Get-SafeFolderName -Name $WorkspaceName
 $documentsPath = [Environment]::GetFolderPath('MyDocuments')
@@ -117,6 +123,7 @@ $initArgs = @{
     FounderName = $FounderName
     ProjectName = $ProjectName
     ProductName = $ProductName
+    Language = $Language
     CreateDay1Worklog = $true
 }
 
@@ -129,13 +136,15 @@ if ($Force) {
 Write-Host ''
 Write-Host 'Done.'
 Write-Host "Vault path: $OutputPath"
+Write-Host "Vault language: $Language"
 Write-Host ''
 Write-Host 'Next steps:'
 Write-Host '1. Open Obsidian.'
 Write-Host '2. Choose "Open folder as vault".'
 Write-Host "3. Select this folder: $OutputPath"
-Write-Host '4. Open FIRST_30_MINUTES.md.'
-Write-Host '5. Then use OBSIDIAN_HOME.md as the daily front door.'
+Write-Host '4. Open START_HERE.md.'
+Write-Host '5. Then open FIRST_30_MINUTES.md.'
+Write-Host '6. Use OBSIDIAN_HOME.md as the daily front door after setup.'
 Write-Host ''
 Write-Host 'For AI-assisted link cleanup, open:'
 Write-Host '00_System_Brain\AI_Obsidian_Link_Maintenance_Prompt.md'

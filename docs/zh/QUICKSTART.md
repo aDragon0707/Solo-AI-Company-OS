@@ -1,126 +1,94 @@
 # 中文快速上手
 
-**目标：** 让你 5 到 10 分钟内跑起来，不先读完整个系统。
+## 1. 安装
 
----
-
-## 1. 下载
-
-打开 GitHub Release，下载最新的 ZIP：
-
-```text
-Solo-AI-Company-OS-v0.1.x.zip
-```
-
-不要下载 GitHub 自动生成的 `Source code.zip`。优先下载 release 里带版本号的安装包。
-
----
-
-## 2. 解压
-
-把 ZIP 解压到一个你能找到的位置。
-
-例如：
-
-```text
-F:\Solo-AI-Company-OS
-```
-
----
-
-## 3. 双击安装
-
-在解压后的文件夹里双击：
+下载 release ZIP，解压后双击：
 
 ```text
 INSTALL_WINDOWS.bat
 ```
 
-安装器会问你几个问题：
+或者运行：
 
-- workspace name
-- your name
-- primary project name
-- primary product / offer / deliverable name
-- vault 要生成到哪里
-
-不知道怎么填时，可以先用默认值。
-
----
-
-## 4. 打开 Obsidian
-
-打开 Obsidian，选择：
-
-```text
-Open folder as vault
+```powershell
+powershell -ExecutionPolicy Bypass -File .\INSTALL.ps1
 ```
 
-然后选择安装器生成的新文件夹。
-
----
-
-## 5. 先读 FIRST_30_MINUTES
-
-打开：
+安装器询问语言时选择：
 
 ```text
-FIRST_30_MINUTES.md
-```
-
-不要先乱翻文件夹。
-
-这个文件会带你完成最小闭环：
-
-```text
-Founder decision -> AI-01 coordination -> dashboard update -> worklog handoff
+zh-CN
 ```
 
 ---
 
-## 6. 复制 AI-01 prompt
+## 2. 打开主入口
 
-打开：
+用 Obsidian、VS Code、Cursor 或任意 Markdown 编辑器打开生成的 vault。
+
+先打开：
+
+```text
+OBSIDIAN_HOME.md
+```
+
+然后按你的目的选：
+
+- `AI_EMPLOYEE_COMMAND_CENTER.md`：开始派工；
+- `agentops-doctor/README.zh-CN.md`：做运行体检；
+- `docs/zh/ONE_PAGE_VISUAL_GUIDE.md`：看架构图。
+
+---
+
+## 3. 启动第一个 AI 员工
+
+如果你只是想开始，不确定找谁，先用 AI-01：
 
 ```text
 03_Company/AI_Employees/AI-01_Founder_Office/START_PROMPT.md
 ```
 
-复制里面的英文 prompt 到你的 AI 聊天窗口。
-
-如果你想要中文回复，在后面加：
+复制里面的提示词到 AI 聊天窗口，再补一句：
 
 ```text
-请用中文回复我，但继续遵守上面的英文系统规则。
+请用中文回答我。帮我完成第一次 setup loop：列出接下来 3 个动作、当前 blocker，以及这次结束后应该创建什么 worklog。
 ```
 
 ---
 
-## 7. 第一次只做一件事
+## 4. 生成第一条 worklog
 
-第一次不要自定义所有文件。
+任务结束后运行：
 
-只完成：
-
-```text
-写一条 founder decision
-让 AI-01 给 top 3 priorities
-更新 dashboard
-保存一条 worklog
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\new-worklog.ps1 -AgentId AI-01 -Title "first setup loop"
 ```
 
-完成这四步，你就已经开始使用这个系统了。
+打开生成的文件，把 AI 做了什么、用了什么工具、验证了什么补进去。
 
 ---
 
-## 常见误区
+## 5. 需要诊断时用 AgentOps Doctor
 
-不要：
+打印一个示例输入：
 
-- 把所有英文 prompt 都翻译成中文再用
-- 一开始就填完所有模板
-- 同时打开五个 AI employee
-- 把 AI 的建议当成 founder decision
-- 把聊天记录当成 worklog
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\doctor-example.ps1 -Case handoff-expired
+```
 
-先跑最小循环，再慢慢扩展。
+把示例发给 AgentOps Doctor 或你的 AI，得到诊断报告。
+
+---
+
+## 6. 每天只做一个循环
+
+```text
+打开 Home
+-> 选 AI 员工
+-> 执行一个任务
+-> 写 worklog
+-> 必要时 handoff
+-> 有重复价值再 distill 成 skill
+```
+
+先让系统跑起来，再让它变漂亮。

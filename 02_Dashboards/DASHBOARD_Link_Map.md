@@ -9,10 +9,17 @@ This file is the starting operating map for the founder and AI employees. Obsidi
 ## Core Entry Chain
 
 - [[OBSIDIAN_HOME|Obsidian Home]]
-- [[FOUNDER_START_HERE|Founder Start Here]]
-- [[01_Founder/FOUNDER_HOME|Founder Home]]
-- [[01_Founder/FOUNDER_Decision_Log|Founder Decision Log]]
+- [[docs/zh/START_HERE|Chinese Start Here]]
+- [[docs/zh/DAY_1_CHINESE_USER_PATH|Day-1 Chinese User Path]]
+- [[03_Company/AI_Employees/AI_EMPLOYEE_COMMAND_CENTER|AI Employee Command Center]]
+- [[agentops-doctor/README.zh-CN|AgentOps Doctor]]
+- [[docs/zh/ONE_PAGE_VISUAL_GUIDE|One-Page Visual Guide]]
 - [[02_Dashboards/DASHBOARD_Company_State|Company State Dashboard]]
+- [[02_Dashboards/DASHBOARD_Longju_Experiment|Longju Experiment Dashboard]]
+- [[02_Dashboards/LINK_CLEANUP_REPORT_20260506_AgentOps_Doctor|AgentOps Doctor Link Cleanup Report]]
+- [[AGENTS|Codex Execution Contract]]
+- [[00_System_Brain/AI_TASK_PACKET_TEMPLATE_ZH|AI Task Packet Template]]
+- [[00_System_Brain/CODEX_EXECUTION_ALIGNMENT_PROTOCOL|Codex Execution Alignment Protocol]]
 - [[00_System_Brain/AI_Text_Maintenance_Protocol|AI Text Maintenance Protocol]]
 - [[03_Company/AI_Worklogs/WORKLOG_INDEX|Worklog Index]]
 
@@ -32,20 +39,44 @@ Rule: Raw thinking can stay messy. Only the decision log creates operating autho
 ## Company Operating Maps
 
 - [[03_Company/MOC_Company|Company Map]]
+- [[03_Company/MOC_AgentOps_Doctor|AgentOps Doctor Map]]
 - [[03_Company/MOC_AI_Employees|AI Employee Map]]
+- [[agentops-doctor/README.zh-CN|AgentOps Doctor Public Module]]
+- [[03_Company/AI_Employees/AI_EMPLOYEE_COMMAND_CENTER|AI Employee Command Center]]
 - [[03_Company/MOC_Project_Evidence|Project Evidence Map]]
 - [[03_Company/MOC_Demo_Package|Demo Package Map]]
 - [[03_Company/Accounts/MOC_Account_TEMPLATE|Account Workspace Template]]
 - [[03_Company/User_Research/README|User Research]]
+- [[03_Company/Skills/README|Skill Memory Layer]]
+- [[03_Company/Skills/SKILL_LIBRARY|Skill Library]]
+- [[03_Company/Skills/AGENT_SKILL_MATRIX|Agent Skill Matrix]]
 
 Rule: Maps help navigation. They do not replace founder decisions, source notes, or worklogs.
 
 ---
 
+## Skill Memory Layer
+
+- [[03_Company/Skills/README|Skill Memory Layer Home]]
+- [[03_Company/Skills/SKILL_TEMPLATE|Skill Template]]
+- [[03_Company/Skills/SKILL_LIBRARY|Skill Library]]
+- [[03_Company/Skills/AGENT_SKILL_MATRIX|Agent Skill Matrix]]
+- [[03_Company/Skills/WORKLOG_TO_SKILL_PROMPT|Worklog To Skill Prompt]]
+- [[03_Company/MOC_AgentOps_Doctor|AgentOps Doctor Map]]
+
+Rule: Skills make proven work reusable. They do not create authority, replace founder decisions, or turn incomplete worklogs into verified truth.
+
+AgentOps Doctor is currently a release candidate and navigation hub, not an automatically promoted active skill.
+
+---
+
 ## AI Employee System
 
+- [[03_Company/AI_Employees/AI_EMPLOYEE_COMMAND_CENTER|AI Employee Command Center]]
+- [[03_Company/AI_Employees/FIVE_LOBSTERS_OPERATING_MODEL|Five Lobsters Operating Model]]
 - [[03_Company/AI_Employees/README|AI Employees Home]]
 - [[03_Company/AI_Employees/COORDINATION_PROTOCOL|Coordination Protocol]]
+- [[03_Company/Skills/AGENT_SKILL_MATRIX|Agent Skill Matrix]]
 - [[03_Company/AI_Employees/AI-01_Founder_Office/START_PROMPT|AI-01 Start Prompt]]
 - [[03_Company/AI_Employees/AI-02_Builder_Evidence/START_PROMPT|AI-02 Start Prompt]]
 - [[03_Company/AI_Employees/AI-03_Growth_Sales/START_PROMPT|AI-03 Start Prompt]]
@@ -53,8 +84,28 @@ Rule: Maps help navigation. They do not replace founder decisions, source notes,
 - [[03_Company/AI_Employees/AI-05_Learning_Tutor/START_PROMPT|AI-05 Start Prompt]]
 - [[00_System_Brain/AI_Text_Maintenance_Protocol|AI Text Maintenance Protocol]]
 - [[00_System_Brain/AI_Obsidian_Link_Maintenance_Prompt|AI Obsidian Link Maintenance Prompt]]
+- [[00_System_Brain/AI_TASK_PACKET_TEMPLATE_ZH|AI Task Packet Template]]
+- [[00_System_Brain/CODEX_EXECUTION_ALIGNMENT_PROTOCOL|Codex Execution Alignment Protocol]]
+- [[00_System_Brain/Doc_Memory_Spine_Skill|Doc Memory Spine Skill]]
+- [[00_System_Brain/LONGJU_DRIFT_CONTROL_PROTOCOL|Longju Drift Control Protocol]]
+- [[00_System_Brain/SACP_MINIMAL_SPEC|SACP Minimal Spec]]
 
 Use the text maintenance protocol for dashboard, map, worklog-index, handoff, and link maintenance. Use the link maintenance prompt only when the task is specifically wiki-link cleanup.
+
+Local-only Longju test queue lives in the sandbox workspace. Public docs should describe it as a local queue, not expose local paths.
+
+---
+
+## AgentOps Doctor Public Module
+
+- [[agentops-doctor/README.zh-CN|AgentOps Doctor Chinese README]]
+- [[agentops-doctor/README|AgentOps Doctor English README]]
+- [[agentops-doctor/templates.zh-CN|Doctor Input Templates]]
+- [[agentops-doctor/cases.zh-CN|Doctor Public Case Library]]
+- [[agentops-doctor/field-notes-playbook.zh-CN|Doctor Field Notes Playbook]]
+- [[agentops-doctor/demo-script-3min.zh-CN|Doctor 3-Minute Demo Script]]
+
+Rule: AgentOps Doctor is a public diagnostic slice. It does not expose private project sources or replace the full AI Company OS.
 
 ---
 

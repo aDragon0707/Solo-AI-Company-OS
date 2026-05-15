@@ -82,3 +82,29 @@ A task is not complete until the responsible AI records:
 - what the next AI or founder needs
 
 No worklog, no durable company memory.
+
+---
+
+## 6. SACP/0.1 Experimental Bridge
+
+SACP/0.1 is the experimental Solo AI Company Protocol layer.
+
+Read:
+
+```text
+00_System_Brain/SACP_Protocol.md
+00_System_Brain/SACP_Agent_Bridge.md
+```
+
+Use SACP only as a lightweight Markdown/YAML operating contract. Do not treat it as a CLI, app, server, database, or autonomous runtime.
+
+When a worklog or handoff has SACP frontmatter:
+
+- `status: completed` is a fact state, not a trigger event
+- `downstream_handoff` names a target owner, not a repeated trigger
+- `handoff_id` is the idempotency key
+- a receiving worklog should cite `source_handoff_id`
+- do not create duplicate handoffs on repeated reads
+- do not require mutation of the source handoff file unless the founder explicitly asks
+
+If SACP fields conflict with founder decisions or verified truth, the existing source hierarchy still wins.

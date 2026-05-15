@@ -2,3 +2,6 @@
 .DS_Store
 Thumbs.db
 dist/
+runtime/
+__pycache__/
+_external/

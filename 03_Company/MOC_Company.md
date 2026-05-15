@@ -9,6 +9,9 @@
 ## Core Operating Files
 
 - `README.md`
+- `OBSIDIAN_HOME.md`
+- `docs/zh/START_HERE.md`
+- `docs/zh/ONE_PAGE_VISUAL_GUIDE.md`
 - `Operating_Manual.md`
 - `Product_Strategy.md`
 - `Offer_And_Pricing_Model.md`
@@ -21,10 +24,21 @@
 ## AI Operations
 
 - `MOC_AI_Employees.md`
+- `MOC_AgentOps_Doctor.md`
+- `AI_Employees/AI_EMPLOYEE_COMMAND_CENTER.md`
 - `AI_Employees/README.md`
 - `AI_Employees/COORDINATION_PROTOCOL.md`
 - `AI_Worklogs/WORKLOG_INDEX.md`
 - `AI_Worklogs/WORKLOG_TEMPLATE.md`
+
+---
+
+## Public Modules
+
+- `../agentops-doctor/README.zh-CN.md`
+- `../agentops-doctor/templates.zh-CN.md`
+- `../agentops-doctor/cases.zh-CN.md`
+- `../agentops-doctor/field-notes-playbook.zh-CN.md`
 
 ---
 

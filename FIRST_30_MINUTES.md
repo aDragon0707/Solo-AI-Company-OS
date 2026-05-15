@@ -4,6 +4,15 @@
 
 Do only the steps on this page. Ignore the rest of the vault until these are done.
 
+Plain version:
+
+```text
+Make one decision.
+Ask AI-01 what to do next.
+Save what happened.
+Stop.
+```
+
 ---
 
 ## 0. Open The Vault
@@ -54,6 +63,12 @@ AI Impact:
 
 This is enough for Day 1. Do not try to fill every template.
 
+What this means in plain English:
+
+```text
+AI can help, but you remain the source of authority.
+```
+
 ---
 
 ## 2. Open AI-01
@@ -81,6 +96,8 @@ Tell me:
 Do not invent business progress. Treat this as Day 1 setup only.
 ```
 
+If you want the AI to reply in another language, add that request after the prompt. Do not rewrite the role prompt first.
+
 ---
 
 ## 3. Update The Company State Dashboard
@@ -106,6 +123,8 @@ not yet verified
 
 Do not make the dashboard look more mature than the source files support.
 
+The dashboard is just a snapshot. It is allowed to look incomplete.
+
 ---
 
 ## 4. Save The First Worklog
@@ -126,6 +145,12 @@ Name it like:
 
 The worklog should say what AI-01 read, what it recommended, what changed, and what still needs founder input.
 
+Think of the worklog as a note for the next AI window:
+
+```text
+Here is what happened. Here is what is still unknown. Do not guess.
+```
+
 ---
 
 ## 5. Stop
@@ -139,6 +164,8 @@ Founder decision -> AI-01 coordination -> dashboard update -> worklog handoff
 ```
 
 That loop is the product. The folder structure is only there to support it.
+
+After your first real worklog exists, you can use `03_Company/Skills/WORKLOG_TO_SKILL_PROMPT.md` to turn a repeatable work pattern into a reusable skill. Do this later; do not make it part of Day 1 setup.
 
 ---
 

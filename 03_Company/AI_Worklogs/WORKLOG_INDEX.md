@@ -26,7 +26,10 @@ AI-05_Worklog_YYYYMMDD_Learning_Review.md
 
 | Date | AI | Topic | File | Status | Next Owner |
 |---|---|---|---|---|---|
-| YYYY-MM-DD | AI-XX | [Topic] | `AI-XX_Worklog_YYYYMMDD_topic.md` | TODO / DONE / BLOCKED | AI-XX / Founder |
+| 2026-05-06 | AI-01 | Longju AgentOps Doctor Distillation | [[03_Company/AI_Worklogs/AI-01_Worklog_20260506_Longju_AgentOps_Doctor_Distillation|AI-01_Worklog_20260506_Longju_AgentOps_Doctor_Distillation.md]] | DONE | Founder / AI-01 / AI-04 |
+| 2026-05-06 | AI-01 | AgentOps Doctor Obsidian Link Cleanup | [[02_Dashboards/LINK_CLEANUP_REPORT_20260506_AgentOps_Doctor|LINK_CLEANUP_REPORT_20260506_AgentOps_Doctor.md]] | DONE | AI-01 |
+| 2026-05-06 | Longju | IR Fallback Drill | [[03_Company/AI_Worklogs/worklog_20260506_longju_ir_fallback_drill|worklog_20260506_longju_ir_fallback_drill.md]] | DONE | AI-01 |
+| 2026-05-06 | Longju | Handoff State Machine Refinement | [[03_Company/AI_Worklogs/worklog_20260506_longju_handoff_state_machine|worklog_20260506_longju_handoff_state_machine.md]] | DONE | AI-01 / AI-04 |
 
 ---
 

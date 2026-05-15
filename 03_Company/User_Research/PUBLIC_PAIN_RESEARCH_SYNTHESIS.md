@@ -27,7 +27,7 @@ Stop losing your AI company inside chat history.
 ```
 
 ```text
-Human decides. AI executes. Markdown remembers. Worklogs hand off.
+Human decides. AI executes. Worklogs capture experience. Skills make it reusable.
 ```
 
 ```text
@@ -59,6 +59,7 @@ Keep improving:
 - `FIRST_30_MINUTES.md`
 - AI-01 onboarding
 - worklog handoff quality
+- skill memory layer
 - dashboard update rules
 - AI text maintenance protocol
 - fictional examples that show one-person company operations

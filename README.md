@@ -1,284 +1,202 @@
 # Solo-AI-Company-OS
 
-**Stop losing your AI company inside chat history.**
+> 一个用 Markdown 管理 AI 员工、决策、工作日志、接力和能力进化的一人公司操作系统。
 
-A Markdown operating system for humans coordinating AI workers with durable memory, clear decisions, worklogs, and handoffs.
+**English short version:** Solo-AI-Company-OS is a Markdown operating system for coordinating AI workers with durable decisions, worklogs, handoffs, and reusable skills.
 
-Solo-AI-Company-OS helps you turn scattered AI chats into founder decisions, role-based AI operators, durable worklogs, handoffs, and a learning loop you can actually trust.
+![Solo-AI-Company-OS 产品地图](assets/solo-ai-company-os-home.zh-CN.svg)
 
-This is not a prompt dump. It is an operating system for memory, delegation, review, and founder judgment.
+---
+
+## 先选一条路
+
+不要先读完整架构。先按你的目的进入：
+
+| 你现在想做什么                 | 打开这里                                                              | 结果                                                            |
+| ----------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------- |
+| 我想开始管理 AI 员工            | [AI 员工派工台](03_Company/AI_Employees/AI_EMPLOYEE_COMMAND_CENTER.md) | 选对 AI 身份，复制启动词，交付后留下 worklog                                  |
+| 我想给 Agent / Worklog 做体检 | [AgentOps Doctor](agentops-doctor/README.zh-CN.md)                | 判断 skip / wait / retry / rework / block，检查脏 worklog 和越界 claim |
+| 我想理解完整架构                | [中文一页纸图解](docs/zh/ONE_PAGE_VISUAL_GUIDE.md)                       | 看懂 Human / AI Employees / Worklogs / Handoffs / Skills 的关系    |
+
+中文用户入口：
+
+- [中文首页](docs/zh/README.md)
+- [从这里开始](docs/zh/START_HERE.md)
+- [快速上手](docs/zh/QUICKSTART.md)
+- [核心术语表](docs/zh/GLOSSARY.md)
+
+---
+
+## 这不是 prompt collection
+
+大多数 AI 工作会散在聊天窗口里：
 
 ```text
-Human decides. AI executes. Markdown remembers. Worklogs hand off.
+窗口 A 讨论战略
+窗口 B 写代码
+窗口 C 查资料
+窗口 D 做审查
+然后没人记得：上次到底决定了什么？
 ```
 
-![Solo-AI-Company-OS map](assets/solo-ai-company-os-map.svg)
+Solo-AI-Company-OS 的核心不是“更长的提示词”，而是把 AI 工作变成可交接、可复查、可复用的公司记忆。
+
+```text
+Human decides.
+AI executes.
+Worklogs remember.
+Handoffs coordinate.
+Skills evolve.
+Markdown stays source of truth.
+```
 
 ---
 
-## At A Glance
+## 包含什么
 
-| If your AI work feels like... | This gives you... |
+| 模块 | 作用 |
 |---|---|
-| decisions buried in old chats | a formal founder decision log |
-| every AI chat starting cold | stable role prompts and read-before-work files |
-| progress reports that vanish | handoff-capable worklogs |
-| strategy mixed with messy thinking | separate inbox, decision, and retrospective ledgers |
-| the founder losing technical confidence | a learning lab with AI-05 as tutor |
-| Obsidian becoming another folder maze | a link map and AI text maintenance protocol |
-
-The system is intentionally boring in the best way: plain files, explicit rules, durable handoff, and no hidden platform dependency.
-
----
-
-## Who Is This For?
-
-- **Solo founders and indie hackers** building complex products with AI.
-- **Researchers and consultants** managing multiple AI context windows.
-- **Non-technical founders** using AI to understand codebases and technical systems.
-- **Operators** who need AI work to leave a durable trail instead of disappearing into chat history.
-
-Optimized for Obsidian MOC navigation, but fundamentally just Markdown. You can use it in Obsidian, VS Code, Cursor, or any editor.
-
-Use this if you want a lightweight company memory system before you build heavier tooling.
-
-Do not use this if you want an auto-running agent platform, a task app clone, a personal knowledge management theme, or a set of one-off prompts.
-
-Chinese onboarding:
-
-- `docs/zh/README.md`
-- `docs/zh/QUICKSTART.md`
-- `docs/zh/GLOSSARY.md`
-- `docs/zh/FIRST_RUN_EXAMPLE.md`
+| Founder Decision Log | 人类记录正式决策，AI 不覆盖人类判断 |
+| AI Employees | 不同 AI 身份有职责、边界和启动词 |
+| Worklogs | 每次重要 AI 工作留下可交接记录 |
+| Handoffs | 用 handoff_id / attempt_id / lease 避免重复执行和卡死 |
+| Skills | 从验证过的 worklog 中沉淀可复用能力 |
+| Dashboards | 摘要当前状态，但不替代正式决策 |
+| AgentOps Doctor | 第一个公开模块，用来诊断多 Agent 运行问题 |
 
 ---
 
-## 15-Minute Quickstart
+## AgentOps Doctor
 
-Do not overthink the architecture. Start with one AI employee and one worklog.
+[AgentOps Doctor](agentops-doctor/README.zh-CN.md) 是从 OS 里切出来的第一个可安装/可展示模块。
 
-Easiest Windows setup:
+它不调度你的 agent，不改你的代码，只做诊断：
 
-1. Download the release ZIP.
-2. Unzip it.
-3. Double-click `INSTALL_WINDOWS.bat`.
-4. Open the generated folder in Obsidian.
-5. Open `FIRST_30_MINUTES.md`.
+- handoff 是否重复执行
+- processing 是否因为 lease 过期而卡住
+- worklog 是否缺 tools_used / verification
+- 公开输出里的 claim 是否越界
+- 某条经验应该 ignore / record / distill / promote candidate
 
-One-command setup:
+如果你在黑客松或团队协作现场，只想快速展示一个可用功能，先展示 AgentOps Doctor。
+
+---
+
+## Longju 实验：用母系统驾驭一只虾
+
+Longju 是 Solo-AI-Company-OS 的第一个真实实验对象：它当前只接普通 API 模型，但用母系统补上外置状态、角色、交接、审查和记忆。
+
+这个实验要验证一件事：
+
+```text
+LLM API 每次调用都是无状态的。
+Markdown + YAML + Worklog Brief 可以让 agent 每次醒来都读懂当前状态。
+```
+
+Longju 的每次重要任务都应该留下：
+
+- YAML frontmatter：给下一次模型调用快速恢复状态；
+- Worklog Brief：给人类和 reviewer 快速理解发生了什么；
+- handoff / attempt / lease：避免重复执行和错误重试；
+- evidence boundary：区分工具结果、文件状态、模型推理和未知。
+
+AgentOps Doctor 是这个母系统的第一个诊断切片；Longju 是用来反复测试它的实验体。
+
+---
+
+## 15 分钟上手
+
+Windows 最短路径：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\INSTALL.ps1
 ```
 
-The installer asks a few questions, creates your vault, and opens the generated folder.
+安装器会询问语言。中文用户选择：
 
-Advanced self-serve setup:
+```text
+zh-CN
+```
+
+生成 vault 后，打开：
+
+```text
+OBSIDIAN_HOME.md
+```
+
+然后只做一件事：从 [AI 员工派工台](03_Company/AI_Employees/AI_EMPLOYEE_COMMAND_CENTER.md) 选一个 AI 员工，跑完一次任务，并用脚本生成 worklog 草稿：
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\init-vault.ps1 `
-  -OutputPath 'F:\Your-New-Vault' `
-  -CompanyName 'Your Company' `
-  -FounderName 'Your Name' `
-  -ProjectName 'Your Project' `
-  -ProductName 'Your Product' `
-  -CreateDay1Worklog
+powershell -ExecutionPolicy Bypass -File .\scripts\new-worklog.ps1 -AgentId AI-01 -Title "first setup loop"
 ```
-
-Or set it up manually:
-
-1. **Open the vault**
-   Open this folder in Obsidian, VS Code, Cursor, or any Markdown editor.
-
-2. **Claim the system**
-   Open `FOUNDER_START_HERE.md` and replace `[Company Name]`, `[Project Name]`, and `[Product Name]`.
-
-3. **Write your first founder decision**
-   Open `01_Founder/FOUNDER_Decision_Log.md` and create:
-   `DEC-YYYYMMDD-001 - Establish AI Operating Boundaries`.
-
-4. **Hire AI-01**
-   Open `03_Company/AI_Employees/AI-01_Founder_Office/START_PROMPT.md`, copy the prompt, and paste it into your LLM chat.
-
-   AI-01 coordinates. It does not make founder decisions.
-
-5. **Create the first worklog**
-   After AI-01 gives you priorities, save the result using:
-   `03_Company/AI_Worklogs/WORKLOG_TEMPLATE.md`.
-
-You now have durable company memory. Welcome to Day 1.
-
-Want to see the shape before filling your own vault? Open `EXAMPLE_DAY_1.md`.
-
-Want the shortest possible path after install? Open `FIRST_30_MINUTES.md`.
-
-Using Obsidian? Open `02_Dashboards/DASHBOARD_Link_Map.md` after setup. The generated vault includes a starter wiki-link map, `00_System_Brain/AI_Text_Maintenance_Protocol.md`, and `00_System_Brain/AI_Obsidian_Link_Maintenance_Prompt.md` for asking an AI assistant to keep navigation, dashboards, and handoffs tidy without changing founder decisions.
 
 ---
 
-## Why This Exists
+## 轻量自动化
 
-Solo founders using AI often run into the same problems:
+这些脚本只生成 Markdown，不联网、不写数据库、不依赖外部包：
 
-- important decisions disappear inside chat history
-- multiple AI windows lose context or duplicate work
-- AI outputs get confused with founder decisions
-- market ambition contaminates project truth
-- the founder becomes less able to understand the system they are building
+```powershell
+.\scripts\new-worklog.ps1      # 生成 worklog 草稿
+.\scripts\new-handoff.ps1      # 生成 handoff 草稿
+.\scripts\doctor-example.ps1   # 打印 AgentOps Doctor 示例输入
+```
 
-Solo-AI-Company-OS solves this by turning a Markdown vault into a lightweight company memory system.
+macOS / Linux / cross-platform users can use the no-dependency Python helper:
 
-The central principle is simple:
+```bash
+python scripts/os-helper.py new-worklog --agent-id AI-01 --title "first setup loop"
+python scripts/os-helper.py new-handoff --from-agent AI-01 --to-agent AI-02 --task-title "prototype evidence check"
+python scripts/os-helper.py doctor-example --case handoff-expired
+python scripts/os-helper.py privacy-guard --text "public text to check"
+```
+
+脚本只是省掉手写字段。真正的 source of truth 仍然是 Markdown 文件。
+
+---
+
+## 适合谁
+
+- 一个人管理多个 AI agent 的 founder / indie hacker
+- 用 Codex、Claude Code、Cursor、ChatGPT 做真实项目的人
+- 希望 AI 工作跨会话、跨工具、跨角色持续的人
+- 需要把 AI 输出变成可审查证据链的小团队
+- 想用 Obsidian 双链管理 AI 公司记忆的人
+
+不适合：
+
+- 想要全自动 agent 平台的人
+- 只想收藏 prompt 的人
+- 不愿意留下任何 worklog 的人
+- 想把 AI 输出直接当事实的人
+
+---
+
+## English Overview
+
+Solo-AI-Company-OS is a Markdown-first operating system for solo founders and small teams coordinating AI workers.
+
+It provides:
+
+- founder decision logs
+- role-based AI employees
+- worklogs and handoffs
+- a skill evolution gate
+- dashboards and Obsidian maps
+- AgentOps Doctor as the first public diagnostic slice
+
+The system is intentionally plain: Markdown files, explicit ownership, auditable work, and human approval before behavior promotion.
+
+---
+
+## Safety Boundary
+
+This repository is a public template and operating model. Do not put private customer data, credentials, screenshots, unpublished strategy, or raw founder reflections into public outputs.
+
+Core rule:
 
 ```text
-The founder makes decisions. AI employees execute, document, review, and teach.
+Founder decisions outrank AI suggestions.
+Verified truth outranks narrative.
+Markdown stays source of truth.
 ```
-
----
-
-## The Five Pillars
-
-### 1. Founder Decision And Thinking System
-
-The founder has three separate ledgers:
-
-- `01_Founder/FOUNDER_Thinking_Inbox.md` for raw thoughts, worries, ideas, and unresolved questions
-- `01_Founder/FOUNDER_Decision_Log.md` for formal decisions that AI employees must obey
-- `01_Founder/FOUNDER_Retrospective_Log.md` for daily or weekly reflection
-
-Raw thinking is allowed to be messy. Formal decisions are structured, dated, and reviewable. Retrospectives convert experience into better future decisions.
-
-### 2. AI Accountability And Data Retention
-
-AI workers are treated like employees with roles, boundaries, start prompts, and worklogs.
-
-Each AI employee has:
-
-- `ROLE.md`
-- `START_PROMPT.md`
-- explicit responsibilities
-- prohibited actions
-- required read-before-work files
-- required end-of-task reporting
-
-Every completed task must leave enough context for the next AI to continue without guessing.
-
-### 3. Project Learning Lab
-
-The founder gets a dedicated learning area, not mixed with production work.
-
-The learning style is:
-
-```text
-Architectural Intent First, Code Deconstruction Second.
-```
-
-AI-05 teaches why a module exists, where it fits, what risk it controls, and only then how the critical-path code works.
-
-### 4. Company State And Project Truth Separation
-
-Company materials may summarize verified truth, but they cannot replace it.
-
-Use this generic project truth chain:
-
-```text
-[Data Capture Component] -> [Integrity Verification] -> [Analytical Output]
-```
-
-Market-facing language must stay downstream of verified project truth.
-
-### 5. Obsidian MOC Navigation
-
-The vault uses Map of Content files as navigation hubs.
-
-`OBSIDIAN_HOME.md` is the front door. MOC files connect:
-
-- founder decisions
-- AI employees
-- company operations
-- project evidence
-- demo assets
-- account workspaces
-- learning lab
-
-The goal is to avoid folder-tree wandering. Both the human founder and AI context windows start from stable entry points.
-
-V1 also includes `02_Dashboards/DASHBOARD_Link_Map.md`, a starter Obsidian graph map, plus an AI text maintenance protocol for keeping links, dashboards, maps, and handoffs useful without changing the meaning of the notes.
-
----
-
-## Default AI Team
-
-| AI | Role | Responsibility |
-|---|---|---|
-| AI-01 | Founder Office / PMO | Priorities, routing, dashboards, state discipline |
-| AI-02 | Builder / Evidence Owner | Project truth, verification, implementation quality |
-| AI-03 | Growth / Revenue | Customers, outreach, offers, pipeline |
-| AI-04 | Research / Risk | Claim boundaries, sensitive language, review |
-| AI-05 | Learning Tutor | Founder learning, architecture explanation, homework review |
-
----
-
-## Daily Operating Loop
-
-1. Open `OBSIDIAN_HOME.md`.
-2. Read `01_Founder/FOUNDER_Decision_Log.md`.
-3. Ask AI-01 for the top priorities and blockers.
-4. Open only the AI employee needed for the task.
-5. The AI reads its role, prompt, dashboards, and worklog index.
-6. The AI completes the task and writes a worklog.
-7. AI-01 updates company state and coordination.
-8. The founder records new decisions or retrospective notes.
-
----
-
-## What This Is Not
-
-This project is not:
-
-- a backend application
-- a customer relationship manager
-- a legal compliance system
-- a replacement for founder judgment
-- a collection of generic prompts
-
-It is a structured Markdown operating system for running AI-assisted work with discipline.
-
----
-
-## After Day 1
-
-Once the quickstart is working:
-
-1. Open `OBSIDIAN_HOME.md` as the stable front door. Do not rename it.
-2. Customize the AI employee roles under `03_Company/AI_Employees/`.
-3. Use `03_Company/AI_Worklogs/WORKLOG_INDEX.md` to track durable work history.
-4. Use `04_Learning/` when the founder needs to understand architecture or code.
-5. Review `00_System_Brain/V2_Cognitive_OS_Roadmap.md` only after v1 is already useful.
-
----
-
-## Example And Launch Files
-
-- `CODEX_RESTART_PROMPT.md` lets a fresh Codex session recover project context after reinstall.
-- `FIRST_30_MINUTES.md` gives new users the smallest useful Day 1 operating loop.
-- `docs/zh/` provides Chinese onboarding guides without forking the English Core prompts.
-- `EXAMPLE_DAY_1.md` shows a fully fake first day inside the system.
-- `CONTRIBUTING.md` defines what kinds of open-source contributions fit this project.
-- `LAUNCH_PLAYBOOK.md` captures the recommended public launch and monetization path.
-- `PRODUCT_BOUNDARY.md` defines the free Core and future Pro Pack boundary.
-- `PROJECT_STATUS.md` tracks maintainer-facing release progress without changing reusable template files.
-- `RELEASE_CHECKLIST.md` defines the validation and packaging flow before public release.
-- `00_System_Brain/AI_Text_Maintenance_Protocol.md` defines how AI may maintain dashboards, maps, links, indexes, and handoffs without taking over founder judgment.
-- `03_Company/User_Research/` contains public pain research prompts and synthesis for improving positioning and onboarding.
-- `scripts/init-vault.ps1` generates a customized vault without paid tools or network calls.
-- `scripts/validate-release.ps1` and `scripts/package-release.ps1` support self-serve release checks and ZIP packaging.
-- `LICENSE` makes the core template usable, forkable, and remixable.
-
----
-
-## Core Rule
-
-When AI output conflicts with the founder's latest explicit decision, the founder decision log wins.
-
-When market ambition conflicts with verified project truth, verified truth wins.

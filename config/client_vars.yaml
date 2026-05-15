@@ -1,0 +1,88 @@
+{
+  "client": {
+    "client_id": "demo_client",
+    "display_name": "Demo Client",
+    "industry": "solo_ai_company",
+    "language": "zh-CN",
+    "timezone": "Asia/Shanghai"
+  },
+  "runtime": {
+    "queue_dir": "runtime/queues",
+    "log_dir": "runtime/logs",
+    "memory_store": "runtime/memory/memory.jsonl",
+    "max_context_memories": 5,
+    "default_priority": 50
+  },
+  "model_provider": {
+    "provider": "openai_compatible",
+    "chat_model": "gpt-5.2",
+    "embedding_model": "text-embedding-3-small",
+    "api_key_env": "OPENAI_API_KEY",
+    "base_url_env": "OPENAI_BASE_URL"
+  },
+  "agents": {
+    "AI-01": {
+      "name": "Founder Office / PMO",
+      "role_path": "03_Company/AI_Employees/AI-01_Founder_Office/ROLE.md",
+      "start_prompt_path": "03_Company/AI_Employees/AI-01_Founder_Office/START_PROMPT.md",
+      "owns": ["routing", "state_sync", "handoff"]
+    },
+    "AI-02": {
+      "name": "Builder / Evidence Owner",
+      "role_path": "03_Company/AI_Employees/AI-02_Builder_Evidence/ROLE.md",
+      "start_prompt_path": "03_Company/AI_Employees/AI-02_Builder_Evidence/START_PROMPT.md",
+      "owns": ["implementation", "verification", "evidence"]
+    },
+    "AI-03": {
+      "name": "Growth / Revenue",
+      "role_path": "03_Company/AI_Employees/AI-03_Growth_Sales/ROLE.md",
+      "start_prompt_path": "03_Company/AI_Employees/AI-03_Growth_Sales/START_PROMPT.md",
+      "owns": ["copywriting", "offer", "customer_communication"]
+    },
+    "AI-04": {
+      "name": "Research / Risk",
+      "role_path": "03_Company/AI_Employees/AI-04_Research_Risk/ROLE.md",
+      "start_prompt_path": "03_Company/AI_Employees/AI-04_Research_Risk/START_PROMPT.md",
+      "owns": ["claim_review", "privacy", "risk"]
+    },
+    "AI-05": {
+      "name": "Learning Tutor",
+      "role_path": "03_Company/AI_Employees/AI-05_Learning_Tutor/ROLE.md",
+      "start_prompt_path": "03_Company/AI_Employees/AI-05_Learning_Tutor/START_PROMPT.md",
+      "owns": ["explanation", "training", "sop"]
+    }
+  },
+  "routing_rules": [
+    {
+      "agent_id": "AI-02",
+      "task_type": "build_or_verify",
+      "keywords": ["build", "implement", "fix", "code", "test", "verify", "artifact", "实现", "修复", "代码", "验证"]
+    },
+    {
+      "agent_id": "AI-03",
+      "task_type": "growth_or_sales",
+      "keywords": ["sales", "offer", "pricing", "copy", "landing", "customer", "launch", "销售", "报价", "文案", "发布"]
+    },
+    {
+      "agent_id": "AI-04",
+      "task_type": "risk_review",
+      "keywords": ["risk", "privacy", "claim", "legal", "review", "public", "风险", "隐私", "声明", "审查", "公开"]
+    },
+    {
+      "agent_id": "AI-05",
+      "task_type": "learning_or_sop",
+      "keywords": ["explain", "teach", "learn", "sop", "training", "解释", "学习", "教程", "培训"]
+    }
+  ],
+  "review_gates": {
+    "public_output_requires_ai04": true,
+    "external_action_requires_human": true,
+    "payment_or_install_requires_human": true,
+    "memory_promotion_requires_human": true
+  },
+  "memory": {
+    "namespaces": ["client_profile", "methodology", "deliverable_pattern", "failure_pattern"],
+    "default_namespace": "methodology",
+    "promotion_threshold": 0.82
+  }
+}
