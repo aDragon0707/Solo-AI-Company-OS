@@ -1,28 +1,29 @@
 # Solo-AI-Company-OS
 
-> A Markdown company brain for solo founders working with AI agents.
+> A Markdown company brain for solo founders and builders working with AI agents.
 
-AI tools are powerful.
-Real AI work gets messy fast.
+Solo-AI-Company-OS turns scattered AI sessions into durable operating memory: decisions, roles, worklogs, handoffs, skills, dashboards, and review records.
 
-- 🤯 decisions disappear inside chat history
-- 🤖 different AI windows do not know what others did
-- 📝 finished tasks leave no durable worklog
-- 🔁 useful workflows are taught again and again
-- 🧪 AI says "done", but nobody checks the evidence
+It is the practical operating layer around the SACP idea:
 
-Solo-AI-Company-OS helps you turn scattered AI sessions into reviewable, reusable operating memory.
+```text
+SACP asks: "What receipt should trustworthy agent work leave behind?"
+Solo-AI-Company-OS asks: "Where does that receipt live, and how does the next run use it?"
+```
 
-[中文文档](docs/zh/README.md) · [Start Here](FOUNDER_START_HERE.md) · [AgentOps Doctor](agentops-doctor/README.md)
+## Who This Is For
 
-![Solo-AI-Company-OS map](assets/solo-ai-company-os-map.svg)
+Use this if you:
 
----
+- work across Codex, Claude Code, Cursor, ChatGPT, Gemini, or other AI tools;
+- lose decisions and task context inside chat history;
+- need handoffs between AI windows or future sessions;
+- want a local-first company brain before adopting heavier tooling;
+- want reusable skills to evolve from real work, not prompt collections.
 
-## The Smallest Useful Loop
+## 30-Second Quick Start
 
-Do not read the whole architecture first.
-Run one small loop:
+Run the smallest useful loop:
 
 ```text
 Human decides.
@@ -34,88 +35,62 @@ Doctor checks risk.
 Markdown keeps the operating memory.
 ```
 
-1. Pick one real task.
-2. Choose an AI worker.
-3. Copy its `START_PROMPT.md` into your AI tool.
-4. Finish the task.
-5. Create a worklog.
-6. Review what should become a reusable skill.
+Start with one real task:
 
-That is enough to start building durable AI memory.
+1. Pick a task that matters.
+2. Choose an AI worker role.
+3. Copy the matching start prompt into your AI tool.
+4. Complete the task.
+5. Create a worklog with evidence.
+6. Decide whether anything should become a reusable skill.
 
----
-
-## What Is Inside?
+## What Is Inside
 
 | Part | Purpose |
 |---|---|
-| 🧭 Founder Decision Log | Records human decisions, tradeoffs, and why they were made |
-| 🤖 AI Employees | Defines AI worker roles, boundaries, and start prompts |
-| 📝 Worklogs | Keeps task history, evidence, results, and open questions |
-| 🔁 Handoffs | Lets agents, windows, and future sessions continue work |
-| 🧰 Skills | Turns verified workflows into reusable operating knowledge |
-| 📊 Dashboards | Summarizes current state without replacing source records |
-| 🩺 AgentOps Doctor | Checks context, claims, evidence, and workflow risk |
+| Founder Decision Log | Records human decisions, tradeoffs, and why they were made |
+| AI Employees | Defines AI worker roles, boundaries, and start prompts |
+| Worklogs | Keeps task history, evidence, results, and open questions |
+| Handoffs | Lets agents, windows, and future sessions continue work |
+| Skills | Turns verified workflows into reusable operating knowledge |
+| Dashboards | Summarizes current state without replacing source records |
+| AgentOps Doctor | Checks context, claims, evidence, and workflow risk |
 
-This is not a prompt collection.
-It is an operating memory system for human-AI work.
+## How It Connects To SACP
 
----
-
-## Who This Is For
-
-Use this if you:
-
-- work with Codex, Claude Code, Cursor, ChatGPT, Gemini, or other AI tools
-- run projects across multiple AI windows or agents
-- keep losing context between sessions
-- want AI work to become reviewable, transferable, and reusable
-- think of AI as a small team, not just a chat box
-
-This may be too heavy if you only want a list of prompts.
-
----
-
-## Quick Start
-
-Windows:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\INSTALL.ps1
-```
-
-Cross-platform helpers:
-
-```bash
-python scripts/os-helper.py new-worklog --agent-id AI-01 --title "first setup loop"
-python scripts/os-helper.py new-handoff --from-agent AI-01 --to-agent AI-02 --task-title "evidence check"
-python scripts/os-helper.py doctor-example --case handoff-expired
-```
-
-The scripts only create Markdown drafts.
-The real source of truth is still the operating memory you maintain.
-
----
-
-## Documentation
-
-- [中文文档](docs/zh/README.md)
-- [Founder Start Here](FOUNDER_START_HERE.md)
-- [First 30 Minutes](FIRST_30_MINUTES.md)
-- [Example Day 1](EXAMPLE_DAY_1.md)
-- [AgentOps Doctor](agentops-doctor/README.md)
-- [Product Boundary](PRODUCT_BOUNDARY.md)
-
----
-
-## Safety Boundary
-
-Do not put credentials, private customer data, unpublished strategy, or raw founder reflections into public outputs.
-
-Core rule:
+SACP is the receipt and audit protocol. Solo-AI-Company-OS is the workspace that stores, reviews, and reuses those receipts.
 
 ```text
-Founder decisions outrank AI suggestions.
-Verified truth outranks narrative.
-Operating memory beats scattered chat history.
+Task -> Worklog -> SACP receipt -> Handoff -> Skill update -> Next run
 ```
+
+Related projects:
+
+- [SACP](https://github.com/aDragon0707/sacp): protocol for auditable agent work
+- [token-prompt-compiler](https://github.com/aDragon0707/token-prompt-compiler): task contract compiler
+- [Agent Flight Recorder](https://github.com/aDragon0707/audit-evolution-agent-flight-recorder): evidence and evolution loop
+
+## Status
+
+This repository is usable as a local-first operating memory system. It is also evolving as a public lab for better human-AI work records. Expect Markdown-first workflows, explicit boundaries, and incremental improvement rather than a polished SaaS product.
+
+## Roadmap
+
+- clarify the first-run path for new users;
+- add more example worklogs and handoffs;
+- connect worklog evidence more tightly to SACP receipts;
+- improve dashboard conventions without replacing source records;
+- document when a workflow should become a skill.
+
+## Contributing
+
+Helpful contributions include:
+
+- small example workflows;
+- clearer starter prompts;
+- better review checklists;
+- practical templates for worklogs, handoffs, and skill evolution.
+
+## License
+
+MIT.
